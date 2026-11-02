@@ -1,0 +1,11 @@
+LOGIN COOLDOWN
+
+Patient: 5 failed attempts = 15-minute temporary cooldown.
+Admin/RHU Staff: 5 failed attempts = 5-minute per-account cooldown.
+Successful login resets the counter.
+Unknown email and wrong password both show: Invalid email or password.
+
+Emergency continuity:
+- The cooldown affects only the specific account, not the whole system or RHU.
+- Another authorized RHU staff account remains usable.
+- Emergency walk-in handling belongs to RHU staff and does not require the administrator account.

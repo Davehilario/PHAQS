@@ -1,0 +1,4 @@
+Fixed Heatmap Record Disease Case navigation without adding Disease Cases to the menu.
+Allowed assigned RHU staff to access the hidden record form.
+Connected Reports Queue Summary to the same filtered appointment records used by the report.
+Preserved emergency-first queue ordering and admin/staff branch restrictions.

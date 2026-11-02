@@ -1,0 +1,5 @@
+Fixed Admin Reports initialization and period filtering.
+Added strict role connectivity to every admin/staff page.
+RHU Staff are limited to their assigned branch and allowed modules; System Administrator retains all modules.
+Emergency queue entries rank before PWD/Senior priority and regular entries; call-next can preempt a non-emergency current queue entry by placing it on hold.
+No visual redesign was applied.

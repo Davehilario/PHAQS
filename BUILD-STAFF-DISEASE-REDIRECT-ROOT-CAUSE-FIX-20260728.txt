@@ -1,0 +1,4 @@
+Fixed the root redirect guard in backend/backend.js.
+- Staff may open admin-heatmap.html and admin-disease-cases.html.
+- Heatmap is no longer classified as an administrator-only page.
+- Existing backend RHU restrictions remain active, so staff data stays limited to the assigned branch.

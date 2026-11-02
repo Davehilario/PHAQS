@@ -1,0 +1,1 @@
+Dedicated admin_reports_data endpoint added. Reports now query the same appointments and patients tables used by the dashboard, with role-aware branch filtering.

@@ -1,0 +1,6 @@
+Reports cleanup:
+- Removed Previous-period Change KPI.
+- Removed Patients by Home Barangay panel.
+- Rebalanced operational KPI row to four equal cards.
+- Expanded Operational Insight to the full report width.
+- Kept RHU, status, service, appointment, queue-performance, and export reporting intact.

@@ -1,0 +1,13 @@
+Targeted enhancement: Branch Availability Recommendation
+
+Changed only:
+- backend/api.php
+- patient/book.html
+- patient/js/patient_book.js
+- patient/css/patient_book.css
+
+Behavior:
+- Compares RHU I-IV after service and date are selected.
+- Uses live operating status, bookable slots, daily remaining capacity, active queue volume, and recent service duration.
+- Recommendation is advisory only; patient makes final branch selection.
+- Clicking an available branch selects the existing Health Center field and preserves the original booking workflow.

@@ -1,0 +1,11 @@
+PATIENT BOOKING CONCERN / NOTES FIX
+
+- The optional Concern / Notes field is now sent during booking.
+- The value is saved in appointments.concern.
+- Admin and RHU staff can see a "Has patient concern" indicator in Appointments.
+- Opening View Appointment shows the complete Patient Concern / Notes.
+- Appointment search includes concern text.
+- CSV export includes Patient Concern / Notes.
+- Existing databases are updated automatically by backend/api.php.
+- Manual fallback migration: backend/appointment_concern_migration.sql
+- Static test result: 78 passed, 0 failed.

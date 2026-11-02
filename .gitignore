@@ -1,0 +1,5 @@
+/backend/config.local.php
+/backend/uploads/announcements/*
+!/backend/uploads/announcements/.gitkeep
+/backend/uploads/caregiver/*
+!/backend/uploads/caregiver/.htaccess

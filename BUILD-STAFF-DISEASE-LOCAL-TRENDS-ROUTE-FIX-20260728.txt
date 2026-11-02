@@ -1,0 +1,7 @@
+Staff Disease Cases & Local Trends route fix
+
+- Staff may open admin-heatmap.html without being redirected to the dashboard.
+- Staff menu includes Disease Cases & Local Trends on all staff pages.
+- Staff may open admin-disease-cases.html to record or edit cases.
+- Existing backend branch enforcement remains active: non-system administrators are restricted to their assigned RHU.
+- Full Reports and other system-wide modules remain administrator-only.

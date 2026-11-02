@@ -1,0 +1,3852 @@
+
+
+html.dark-mode {
+  --phc-navy: #0d1b3e;
+  --phc-blue: #3b82f6;
+  --phc-blue-soft: #1e3a5f;
+  --phc-bg: #0f172a;
+  --phc-surface: #1e293b;
+  --phc-border: #334155;
+  --phc-text: #f1f5f9;
+  --phc-muted: #94a3b8;
+  --phc-danger: #ef4444;
+}
+
+html.dark-mode body {
+  background: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+html.dark-mode [style*="background"],
+html.dark-mode [style*="background-color"] {
+  background-color: rgba(255,255,255,0.04) !important;
+  background-image: none !important;
+  border-color: rgba(148,163,184,.16) !important;
+  color: #f8fbff !important;
+}
+html.dark-mode .text-dark,
+html.dark-mode .text-black,
+html.dark-mode .text-muted,
+html.dark-mode .text-secondary,
+html.dark-mode .text-gray-500,
+html.dark-mode .text-gray-600 {
+  color: #f8fbff !important;
+}
+html.dark-mode .stat-box,
+html.dark-mode .stat-card,
+html.dark-mode .card,
+html.dark-mode .card-head,
+html.dark-mode .card-body,
+html.dark-mode .filter-bar,
+html.dark-mode .stats-row > div {
+  background: #102347 !important;
+  border-color: rgba(148,163,184,.16) !important;
+  color: #f8fbff !important;
+}
+html.dark-mode .stat-label,
+html.dark-mode .stat-value,
+html.dark-mode .stat-label p,
+html.dark-mode .stat-value p {
+  color: #f8fbff !important;
+}
+html.dark-mode .stat-value {
+  color: #60a5fa !important;
+}
+html.dark-mode .bg-white,
+html.dark-mode .bg-light,
+html.dark-mode .bg-faded,
+html.dark-mode .filter-card,
+html.dark-mode .modal-box,
+html.dark-mode .admin-only-notice,
+html.dark-mode .page-btn,
+html.dark-mode .btn-sm,
+html.dark-mode .badge-admin,
+html.dark-mode .badge-rhu,
+html.dark-mode .badge-active,
+html.dark-mode .badge-offline,
+html.dark-mode .btn-modal-cancel,
+html.dark-mode .btn-modal-primary,
+html.dark-mode .filter-card,
+html.dark-mode .section-card,
+html.dark-mode .table-card,
+html.dark-mode .rhu-item,
+html.dark-mode .service-bar-row,
+html.dark-mode .session-card,
+html.dark-mode .session-avatar,
+html.dark-mode .user-avatar,
+html.dark-mode .ops-section-title,
+html.dark-mode .simple-modal .modal-content,
+html.dark-mode .simple-modal .modal-header,
+html.dark-mode .simple-modal .modal-footer {
+  background: #102347 !important;
+  border-color: rgba(148,163,184,.16) !important;
+  color: #f8fbff !important;
+}
+html.dark-mode .simple-modal .modal-title,
+html.dark-mode .simple-modal .modal-body,
+html.dark-mode .simple-modal .modal-footer {
+  color: #f8fbff !important;
+}
+
+html.dark-mode .navbar {
+  background: #0d1b3e !important;
+  border-bottom: 3px solid #1e40af !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4) !important;
+}
+
+html.dark-mode .logo-area strong { color: #f1f5f9 !important; }
+html.dark-mode .logo-area small  { color: #94a3b8 !important; }
+html.dark-mode .a-name  { color: #f1f5f9 !important; }
+html.dark-mode .a-role  { color: #94a3b8 !important; }
+
+html.dark-mode .btn-logout {
+  background: #1e293b !important;
+  color: #ef4444 !important;
+  border-color: #7f1d1d !important;
+}
+html.dark-mode .btn-logout:hover { background: #2d1a1a !important; }
+
+html.dark-mode .sidebar {
+  background: #0d1b3e !important;
+  border-right: 1px solid #1e3a5f !important;
+}
+html.dark-mode .sidebar-section-label { color: #64748b !important; }
+html.dark-mode .sidebar-item { color: #cbd5e1 !important; }
+html.dark-mode .sidebar-item:hover,
+html.dark-mode .sidebar-item.active {
+  background: #1e3a5f !important;
+  color: #93c5fd !important;
+  border-left-color: #3b82f6 !important;
+}
+html.dark-mode .s-icon {
+  background: rgba(255,255,255,0.08) !important;
+  color: #94a3b8 !important;
+}
+html.dark-mode .sidebar-item:hover .s-icon,
+html.dark-mode .sidebar-item.active .s-icon {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+}
+
+html.dark-mode .mobile-sidebar {
+  background: #0d1b3e !important;
+  border-top: 1px solid #1e3a5f !important;
+}
+html.dark-mode .mob-section-label { color: #64748b !important; }
+html.dark-mode .mob-sidebar-item  { color: #cbd5e1 !important; }
+html.dark-mode .mob-sidebar-item:hover,
+html.dark-mode .mob-sidebar-item.active {
+  background: #1e3a5f !important;
+  color: #93c5fd !important;
+}
+html.dark-mode .mob-s-icon {
+  background: rgba(255,255,255,0.08) !important;
+  color: #94a3b8 !important;
+}
+html.dark-mode .mob-sidebar-item.active .mob-s-icon,
+html.dark-mode .mob-sidebar-item:hover  .mob-s-icon {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+}
+
+html.dark-mode .menu,
+html.dark-mode nav { background: #0d1b3e !important; }
+html.dark-mode .menu a { color: #cbd5e1 !important; }
+html.dark-mode .menu a:hover { color: #93c5fd !important; }
+html.dark-mode .menu a.active {
+  background: #1e3a5f !important;
+  color: #93c5fd !important;
+}
+html.dark-mode .mobile-menu {
+  background: #0d1b3e !important;
+  border-top: 1px solid #1e3a5f !important;
+}
+html.dark-mode .mobile-menu a { color: #cbd5e1 !important; }
+html.dark-mode .mobile-menu a.active { background: #1e3a5f !important; color: #93c5fd !important; }
+html.dark-mode .mob-user { color: #f1f5f9 !important; }
+html.dark-mode .mob-divider { background: #1e3a5f !important; }
+
+html.dark-mode .main-content { background: #0f172a !important; }
+
+html.dark-mode .section-card,
+html.dark-mode .chart-card,
+html.dark-mode .stat-card,
+html.dark-mode .qa-card,
+html.dark-mode .login-card,
+html.dark-mode .book-card,
+html.dark-mode .profile-header-card,
+html.dark-mode .tab-nav,
+html.dark-mode .rhu-card,
+html.dark-mode .modal-content,
+html.dark-mode .card,
+html.dark-mode .card-box,
+html.dark-mode .summary-card,
+html.dark-mode .info-card,
+html.dark-mode .appt-card,
+html.dark-mode .queue-card,
+html.dark-mode .branch-queue-card,
+html.dark-mode .ops-card,
+html.dark-mode .bh-card,
+html.dark-mode .ps-box,
+html.dark-mode .ps-box-priority,
+html.dark-mode .ps-box-regular,
+html.dark-mode .notice-box,
+html.dark-mode .notice,
+html.dark-mode .action-card,
+html.dark-mode .queue-stat-box,
+html.dark-mode .appt-date-box,
+html.dark-mode .progress-bar,
+html.dark-mode .page-container,
+html.dark-mode .main-grid,
+html.dark-mode .q-card,
+html.dark-mode .q-card-body,
+html.dark-mode .q-card-header,
+html.dark-mode .yq-empty,
+html.dark-mode .q-item,
+html.dark-mode .q-badge,
+html.dark-mode .yq-ahead-pill,
+html.dark-mode .yq-block,
+html.dark-mode .yq-number,
+html.dark-mode .queue-list,
+html.dark-mode .reminder-text {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3) !important;
+  color: #f1f5f9 !important;
+}
+
+html.dark-mode #queueIndicator {
+  background: #1d4ed8 !important;
+  color: #f8fbff !important;
+  border: 1px solid #2563eb !important;
+}
+
+html.dark-mode table,
+html.dark-mode .table {
+  color: #f1f5f9 !important;
+}
+html.dark-mode .table thead th,
+html.dark-mode thead th {
+  background: #0f172a !important;
+  color: #94a3b8 !important;
+  border-color: #334155 !important;
+}
+html.dark-mode .table td,
+html.dark-mode .table th,
+html.dark-mode td, html.dark-mode th {
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+html.dark-mode .table-striped tbody tr:nth-of-type(odd),
+html.dark-mode tbody tr:nth-of-type(odd) {
+  background: rgba(255,255,255,0.03) !important;
+}
+html.dark-mode tbody tr:hover { background: rgba(59,130,246,0.08) !important; }
+
+html.dark-mode .page-header h2,
+html.dark-mode h1, html.dark-mode h2, html.dark-mode h3,
+html.dark-mode h4, html.dark-mode h5 {
+  color: #f1f5f9 !important;
+}
+html.dark-mode .page-header p,
+html.dark-mode p { color: #94a3b8 !important; }
+html.dark-mode label { color: #cbd5e1 !important; }
+
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea,
+html.dark-mode .form-control,
+html.dark-mode .form-select {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #f1f5f9 !important;
+}
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder { color: #64748b !important; }
+html.dark-mode input:focus,
+html.dark-mode select:focus,
+html.dark-mode textarea:focus,
+html.dark-mode .form-control:focus,
+html.dark-mode .form-select:focus {
+  background: #1e293b !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.15) !important;
+  color: #f1f5f9 !important;
+}
+
+html.dark-mode .btn-main,
+html.dark-mode .btn-login,
+html.dark-mode .btn-save,
+html.dark-mode .btn-dark-blue,
+html.dark-mode .btn-primary {
+  background: #2563eb !important;
+  border-color: #2563eb !important;
+  color: #fff !important;
+}
+html.dark-mode .btn-main:hover,
+html.dark-mode .btn-login:hover,
+html.dark-mode .btn-save:hover,
+html.dark-mode .btn-primary:hover {
+  background: #1d4ed8 !important;
+}
+html.dark-mode .btn-outline-cancel,
+html.dark-mode .btn-light,
+html.dark-mode .btn-secondary {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f1f5f9 !important;
+}
+html.dark-mode .btn-outline-primary {
+  color: #60a5fa !important;
+  border-color: #60a5fa !important;
+  background: transparent !important;
+}
+html.dark-mode .btn-outline-primary:hover {
+  background: #1e3a5f !important;
+}
+
+html.dark-mode .badge-confirmed,
+html.dark-mode .badge-active {
+  background: #14532d !important;
+  color: #4ade80 !important;
+  border-color: #166534 !important;
+}
+html.dark-mode .badge-pending {
+  background: #78350f !important;
+  color: #fbbf24 !important;
+  border-color: #92400e !important;
+}
+html.dark-mode .badge-cancelled {
+  background: #450a0a !important;
+  color: #f87171 !important;
+  border-color: #7f1d1d !important;
+}
+html.dark-mode .badge-serving,
+html.dark-mode .badge-waiting {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+  border-color: #1d4ed8 !important;
+}
+html.dark-mode .status-badge,
+html.dark-mode .admin-tag,
+html.dark-mode .branch-badge {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+  border-color: #1d4ed8 !important;
+}
+
+html.dark-mode .badge.bg-success { background: #14532d !important; color: #4ade80 !important; }
+html.dark-mode .badge.bg-warning { background: #78350f !important; color: #fbbf24 !important; }
+html.dark-mode .badge.bg-danger  { background: #450a0a !important; color: #f87171 !important; }
+html.dark-mode .badge.bg-primary { background: #1e3a5f !important; color: #60a5fa !important; }
+html.dark-mode .badge.bg-secondary { background: #1e293b !important; color: #94a3b8 !important; }
+
+html.dark-mode .dropdown-menu {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark-mode .dropdown-item { color: #e2e8f0 !important; }
+html.dark-mode .dropdown-item:hover { background: #1e3a5f !important; color: #93c5fd !important; }
+html.dark-mode .dropdown-divider { border-color: #334155 !important; }
+
+html.dark-mode .modal-content {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark-mode .modal-header {
+  background: #0d1b3e !important;
+  border-bottom-color: #334155 !important;
+}
+html.dark-mode .modal-title { color: #f1f5f9 !important; }
+html.dark-mode .modal-footer { border-top-color: #334155 !important; }
+html.dark-mode .modal-body { color: #e2e8f0 !important; }
+html.dark-mode .btn-close { filter: invert(1) !important; }
+
+html.dark-mode .plain-dialog-backdrop {
+  background: rgba(0,0,0,0.65) !important;
+}
+html.dark-mode .plain-dialog {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+html.dark-mode .plain-dialog-head {
+  border-bottom-color: #334155 !important;
+  color: #f1f5f9 !important;
+}
+html.dark-mode .plain-dialog-body { color: #cbd5e1 !important; }
+html.dark-mode .plain-dialog-actions { border-top-color: #334155 !important; }
+html.dark-mode .plain-dialog-btn {
+  background: #0f172a !important;
+  border-color: #334155 !important;
+  color: #f1f5f9 !important;
+}
+
+html.dark-mode .stat-icon,
+html.dark-mode .qa-icon,
+html.dark-mode .hicon,
+html.dark-mode .mob-s-icon,
+html.dark-mode .si-blue,
+html.dark-mode .si-green,
+html.dark-mode .si-amber,
+html.dark-mode .si-purple {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+}
+
+html.dark-mode .info-notice,
+html.dark-mode .notice-box,
+html.dark-mode .alert-info {
+  background: #0c1f3d !important;
+  border-color: #1e3a5f !important;
+  color: #93c5fd !important;
+}
+html.dark-mode .alert-success {
+  background: #052e16 !important;
+  border-color: #166534 !important;
+  color: #4ade80 !important;
+}
+html.dark-mode .alert-warning {
+  background: #1c1100 !important;
+  border-color: #92400e !important;
+  color: #fbbf24 !important;
+}
+html.dark-mode .alert-danger {
+  background: #1a0505 !important;
+  border-color: #7f1d1d !important;
+  color: #f87171 !important;
+}
+html.dark-mode .error-box, html.dark-mode .error-msg {
+  background: #1a0505 !important;
+  color: #f87171 !important;
+  border-color: #7f1d1d !important;
+}
+html.dark-mode .success-msg {
+  background: #052e16 !important;
+  color: #4ade80 !important;
+  border-color: #166534 !important;
+}
+
+/* notification update */
+html.dark-mode .notif-bar,
+html.dark-mode .announcement-bar {
+  background: #0c1f3d !important;
+  border-color: #1e3a5f !important;
+  color: #93c5fd !important;
+}
+
+html.dark-mode .ph-card,
+html.dark-mode .profile-header-top {
+  background: #0d1b3e !important;
+}
+
+html.dark-mode .rhu-card.selected {
+  border-color: #3b82f6 !important;
+  background: #1e3a5f !important;
+}
+
+html.dark-mode .tab-btn {
+  background: #0f172a !important;
+  color: #94a3b8 !important;
+  border-color: #334155 !important;
+}
+html.dark-mode .tab-btn.active {
+  background: #2563eb !important;
+  color: #fff !important;
+  border-color: #2563eb !important;
+}
+
+html.dark-mode ::-webkit-scrollbar { width: 6px; height: 6px; }
+html.dark-mode ::-webkit-scrollbar-track { background: #0f172a; }
+html.dark-mode ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+html.dark-mode ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+html.dark-mode .progress {
+  background: #334155 !important;
+}
+
+html.dark-mode .queue-number-big { color: #60a5fa !important; }
+html.dark-mode .serving-row { background: #1e3a5f !important; }
+
+html.dark-mode .priority-badge,
+html.dark-mode .lane-priority {
+  background: #78350f !important;
+  color: #fbbf24 !important;
+  border-color: #92400e !important;
+}
+html.dark-mode .lane-regular {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+}
+
+html.dark-mode .hero-section,
+html.dark-mode .hero { background: #0d1b3e !important; }
+html.dark-mode .service-card { background: #1e293b !important; border-color: #334155 !important; }
+html.dark-mode .service-card:hover { background: #1e3a5f !important; border-color: #3b82f6 !important; }
+html.dark-mode footer { background: #0d1b3e !important; color: #94a3b8 !important; }
+
+html.dark-mode .login-bg { background: #0f172a !important; }
+html.dark-mode .login-card { background: #1e293b !important; border-color: #334155 !important; }
+
+.dark-mode-toggle {
+  background: none;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  line-height: 1;
+}
+.dark-mode-toggle:hover { background: #f1f5f9; }
+
+html.dark-mode .dark-mode-toggle {
+  border-color: #334155;
+  color: #f1f5f9;
+  background: #1e293b;
+}
+html.dark-mode .dark-mode-toggle:hover { background: #334155; }
+
+html.dark-mode,
+html.dark-mode body {
+  background: #06142f !important;
+  color: #f8fbff !important;
+}
+html.dark-mode body,
+html.dark-mode .page,
+html.dark-mode .admin-page,
+html.dark-mode .app,
+html.dark-mode .layout,
+html.dark-mode .content,
+html.dark-mode .main,
+html.dark-mode .main-content,
+html.dark-mode .page-content,
+html.dark-mode .admin-content,
+html.dark-mode .dashboard-content {
+  background: linear-gradient(135deg,#06142f 0%,#071a3a 45%,#08245a 100%) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode body,
+html.dark-mode body * {
+  transition: background-color .22s ease, border-color .22s ease, color .18s ease, box-shadow .22s ease !important;
+}
+
+html.dark-mode .navbar,
+html.dark-mode .topbar,
+html.dark-mode .top-bar,
+html.dark-mode header,
+html.dark-mode .admin-header {
+  background: #0a2a61 !important;
+  border-color: rgba(96,165,250,.24) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,.22) !important;
+  color: #f8fbff !important;
+}
+html.dark-mode .sidebar,
+html.dark-mode .side-nav,
+html.dark-mode .sidenav,
+html.dark-mode .mobile-sidebar {
+  background: linear-gradient(180deg,#0b2d68 0%,#082657 100%) !important;
+  border-color: rgba(96,165,250,.22) !important;
+  color: #f8fbff !important;
+}
+html.dark-mode .sidebar *:not(.badge):not(.status-badge),
+html.dark-mode .navbar *:not(.badge):not(.status-badge),
+html.dark-mode .topbar *:not(.badge):not(.status-badge) {
+  color: #f8fbff !important;
+}
+html.dark-mode .sidebar-section-label,
+html.dark-mode .mob-section-label {
+  color: #8fb7ff !important;
+}
+html.dark-mode .sidebar-item.active,
+html.dark-mode .mob-sidebar-item.active,
+html.dark-mode .nav-link.active,
+html.dark-mode .menu-item.active {
+  background: #2f63ff !important;
+  color: #fff !important;
+  border-color: rgba(147,197,253,.45) !important;
+}
+html.dark-mode .sidebar-item:hover,
+html.dark-mode .mob-sidebar-item:hover,
+html.dark-mode .nav-link:hover,
+html.dark-mode .menu-item:hover {
+  background: rgba(47,99,255,.35) !important;
+  color: #fff !important;
+}
+html.dark-mode .nav-container,
+html.dark-mode .nav-right,
+html.dark-mode .logo-area,
+html.dark-mode .admin-info,
+html.dark-mode .hamburger-btn,
+html.dark-mode .mobile-sidebar,
+html.dark-mode .mobile-menu,
+html.dark-mode .menu {
+  background: transparent !important;
+  color: #f8fbff !important;
+}
+html.dark-mode .admin-avatar {
+  background: #dbeafe !important;
+  color: #0b2d68 !important;
+  border: 2px solid #93c5fd !important;
+}
+html.dark-mode .nav-container *:not(.badge):not(.status-badge),
+html.dark-mode .nav-right *:not(.badge):not(.status-badge),
+html.dark-mode .logo-area *,
+html.dark-mode .admin-info *,
+html.dark-mode .hamburger-btn,
+html.dark-mode .mobile-menu a,
+html.dark-mode .menu a,
+html.dark-mode .sidebar-item,
+html.dark-mode .mob-sidebar-item {
+  color: #f8fbff !important;
+}
+html.dark-mode .nav-right .admin-avatar,
+html.dark-mode .logo-area .admin-avatar,
+html.dark-mode .admin-avatar {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border: 2px solid #93c5fd !important;
+}
+html.dark-mode .queue-table th,
+html.dark-mode .queue-table td {
+  color: #f8fbff !important;
+}
+html.dark-mode .service-cell {
+  color: #f8fbff !important;
+}
+html.dark-mode .time-chip i,
+html.dark-mode .time-chip span {
+  color: #ffffff !important;
+}
+html.dark-mode .btn-logout,
+html.dark-mode .menu a.active,
+html.dark-mode .mobile-menu a.active,
+html.dark-mode .sidebar-item.active,
+html.dark-mode .mob-sidebar-item.active {
+  background: #2f63ff !important;
+  color: #fff !important;
+  border-color: rgba(147,197,253,.45) !important;
+}
+html.dark-mode .menu a:hover,
+html.dark-mode .mobile-menu a:hover,
+html.dark-mode .sidebar-item:hover,
+html.dark-mode .mob-sidebar-item:hover {
+  background: rgba(47,99,255,.25) !important;
+  color: #fff !important;
+}
+html.dark-mode .s-icon,
+html.dark-mode .mob-s-icon,
+html.dark-mode .nav-icon,
+html.dark-mode .icon-box,
+html.dark-mode .stat-icon,
+html.dark-mode .section-icon,
+html.dark-mode .card-icon {
+  background: #2f63ff !important;
+  color: #dbeafe !important;
+}
+
+html.dark-mode .stat-card,
+html.dark-mode .summary-card,
+html.dark-mode .metric-card,
+html.dark-mode .kpi-card,
+html.dark-mode .dash-card,
+html.dark-mode .dashboard-card,
+html.dark-mode .quick-card,
+html.dark-mode .quick-action,
+html.dark-mode .action-card,
+html.dark-mode .section-card,
+html.dark-mode .card,
+html.dark-mode .panel,
+html.dark-mode .box,
+html.dark-mode .tile,
+html.dark-mode .widget,
+html.dark-mode .chart-card,
+html.dark-mode .table-card,
+html.dark-mode .table-container,
+html.dark-mode .table-wrapper,
+html.dark-mode .filter-row,
+html.dark-mode .filters,
+html.dark-mode .filter-bar,
+html.dark-mode .branch-card,
+html.dark-mode .branch-queue-card,
+html.dark-mode .queue-card,
+html.dark-mode .queue-panel,
+html.dark-mode .queue-list,
+html.dark-mode .now-serving,
+html.dark-mode .next-card,
+html.dark-mode .rhu-card,
+html.dark-mode .profile-card,
+html.dark-mode .profile-box,
+html.dark-mode .profile-panel,
+html.dark-mode .modal-box,
+html.dark-mode .modal-content,
+html.dark-mode .upload-box,
+html.dark-mode .drop-zone,
+html.dark-mode .data-chip,
+html.dark-mode .branch-tab,
+html.dark-mode .tab-card {
+  background: linear-gradient(145deg,#0d2d65 0%,#0a2554 100%) !important;
+  border: 1px solid rgba(96,165,250,.35) !important;
+  color: #f8fbff !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,.18) !important;
+}
+
+html.dark-mode .section-head,
+html.dark-mode .section-body,
+html.dark-mode .card-header,
+html.dark-mode .card-body,
+html.dark-mode .data-table,
+html.dark-mode .data-table th,
+html.dark-mode .data-table td,
+html.dark-mode .data-table tr,
+html.dark-mode .table-card,
+html.dark-mode .table-wrapper,
+html.dark-mode .table-container,
+html.dark-mode .filter-bar,
+html.dark-mode .filter-row,
+html.dark-mode .filters,
+html.dark-mode .search-input,
+html.dark-mode .filter-input,
+html.dark-mode .filter-select,
+html.dark-mode .branch-select,
+html.dark-mode .form-control,
+html.dark-mode .form-select,
+html.dark-mode .input-group,
+html.dark-mode .form-group input,
+html.dark-mode .form-group select,
+html.dark-mode .btn-outline,
+html.dark-mode .btn-light,
+html.dark-mode .btn-outline-cancel,
+html.dark-mode .btn-modal-cancel,
+html.dark-mode .btn-modal-primary,
+html.dark-mode .btn-outline-primary,
+html.dark-mode .btn-edit,
+html.dark-mode .btn-disable,
+html.dark-mode .btn-enable,
+html.dark-mode .btn-delete,
+html.dark-mode .btn-print,
+html.dark-mode .badge,
+html.dark-mode .status-badge,
+html.dark-mode .admin-tag,
+html.dark-mode .branch-badge,
+html.dark-mode .info-notice,
+html.dark-mode .notice-box,
+html.dark-mode .plain-dialog,
+html.dark-mode .plain-dialog-head,
+html.dark-mode .plain-dialog-body,
+html.dark-mode .plain-dialog-actions,
+html.dark-mode .plain-dialog-btn {
+  background: #102347 !important;
+  background-color: #102347 !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.24) !important;
+}
+html.dark-mode .section-head { border-bottom-color: rgba(148,163,184,.16) !important; }
+html.dark-mode .data-table th,
+html.dark-mode .data-table td {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-color: rgba(148,163,184,.16) !important;
+  color: #f8fbff !important;
+}
+html.dark-mode .data-table tbody tr:hover td {
+  background-color: #0f2d5b !important;
+}
+html.dark-mode .section-head-left h6,
+html.dark-mode .section-head-left p,
+html.dark-mode .section-header h6,
+html.dark-mode .section-header p,
+html.dark-mode .page-header h2,
+html.dark-mode .page-header p,
+html.dark-mode .page-title,
+html.dark-mode .section-title,
+html.dark-mode .card-title,
+html.dark-mode .card-subtitle,
+html.dark-mode .section-subtitle,
+html.dark-mode .stat-label,
+html.dark-mode .stat-value,
+html.dark-mode .metric-value,
+html.dark-mode .text-muted,
+html.dark-mode .muted,
+html.dark-mode .desc,
+html.dark-mode .help-text,
+html.dark-mode p,
+html.dark-mode span,
+html.dark-mode label,
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: #f8fbff !important;
+}
+html.dark-mode .btn-outline,
+html.dark-mode .btn-light,
+html.dark-mode .btn-outline-cancel,
+html.dark-mode .btn-modal-cancel,
+html.dark-mode .btn-outline-primary,
+html.dark-mode .btn-edit,
+html.dark-mode .btn-disable,
+html.dark-mode .btn-delete,
+html.dark-mode .btn-enable {
+  background: rgba(255,255,255,.05) !important;
+  color: #f8fbff !important;
+  border-color: rgba(148,163,184,.24) !important;
+}
+html.dark-mode .btn-outline-primary:hover,
+html.dark-mode .btn-outline:hover,
+html.dark-mode .btn-light:hover,
+html.dark-mode .btn-modal-cancel:hover,
+html.dark-mode .btn-edit:hover,
+html.dark-mode .btn-disable:hover,
+html.dark-mode .btn-delete:hover,
+html.dark-mode .btn-enable:hover {
+  background: rgba(255,255,255,.1) !important;
+}
+
+html.dark-mode [style*="background:white"],
+html.dark-mode [style*="background: white"],
+html.dark-mode [style*="background:#fff"],
+html.dark-mode [style*="background: #fff"],
+html.dark-mode [style*="background:#ffffff"],
+html.dark-mode [style*="background: #ffffff"],
+html.dark-mode [style*="background:rgb(255"],
+html.dark-mode [style*="background: rgb(255"],
+html.dark-mode [style*="background-color:white"],
+html.dark-mode [style*="background-color: white"],
+html.dark-mode [style*="background-color:#fff"],
+html.dark-mode [style*="background-color: #fff"],
+html.dark-mode [style*="background-color:#ffffff"],
+html.dark-mode [style*="background-color: #ffffff"],
+html.dark-mode [style*="background-color:rgb(255"],
+html.dark-mode [style*="background-color: rgb(255"],
+html.dark-mode [style*="#f1f5f9"],
+html.dark-mode [style*="#eff6ff"],
+html.dark-mode [style*="#f3f4f6"],
+html.dark-mode [style*="#fafafa"],
+html.dark-mode [style*="#f9fafb"],
+html.dark-mode [style*="#fffbeb"],
+html.dark-mode [style*="#fde68a"],
+html.dark-mode [style*="#dcfce7"],
+html.dark-mode [style*="#fef9c3"],
+html.dark-mode [style*="#fee2e2"],
+html.dark-mode [style*="#dbeafe"],
+html.dark-mode [style*="#ede9fe"],
+html.dark-mode [style*="#fce7f3"] {
+  background: #0d2d65 !important;
+  background-color: #0d2d65 !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.35) !important;
+}
+
+html.dark-mode .alert,
+html.dark-mode .alert-box,
+html.dark-mode .notice,
+html.dark-mode .notice-box,
+html.dark-mode .info-notice,
+html.dark-mode .alert-amber,
+html.dark-mode .warning-box,
+html.dark-mode .ps-box-priority,
+html.dark-mode .ps-box-regular,
+html.dark-mode [style*="#fffbeb"],
+html.dark-mode [style*="#fff7ed"],
+html.dark-mode [style*="#fff1f2"],
+html.dark-mode [style*="#fef3c7"],
+html.dark-mode [style*="#eff6ff"] {
+  background: #102f68 !important;
+  background-color: #102f68 !important;
+  border-color: rgba(96,165,250,.36) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .tbl-section-priority,
+html.dark-mode .tbl-section-emergency,
+html.dark-mode .row-priority td,
+html.dark-mode .row-emergency td,
+html.dark-mode tr.row-priority td,
+html.dark-mode tr.row-emergency td {
+  background: none !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: inherit !important;
+}
+
+html.dark-mode .main-content,
+html.dark-mode .main-content *:not(.badge):not(.status-badge):not(.btn):not(button):not(.priority-badge):not(.lane-priority):not(.lane-regular),
+html.dark-mode .admin-content,
+html.dark-mode .admin-content *:not(.badge):not(.status-badge):not(.btn):not(button):not(.priority-badge):not(.lane-priority):not(.lane-regular) {
+  color: #f8fbff !important;
+}
+html.dark-mode p,
+html.dark-mode small,
+html.dark-mode span,
+html.dark-mode label,
+html.dark-mode .muted,
+html.dark-mode .text-muted,
+html.dark-mode .subtext,
+html.dark-mode .desc,
+html.dark-mode .help-text,
+html.dark-mode .card-subtitle,
+html.dark-mode .stat-label,
+html.dark-mode .section-subtitle {
+  color: #c7d9ff !important;
+}
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6,
+html.dark-mode .page-title,
+html.dark-mode .section-title,
+html.dark-mode .card-title,
+html.dark-mode .stat-value,
+html.dark-mode .metric-value,
+html.dark-mode .queue-number-big {
+  color: #ffffff !important;
+}
+html.dark-mode a { color: #8bbcff !important; }
+html.dark-mode a:hover { color: #ffffff !important; }
+
+html.dark-mode table,
+html.dark-mode .table,
+html.dark-mode .data-table,
+html.dark-mode .queue-table,
+html.dark-mode .reports-table,
+html.dark-mode .patient-table {
+  background: #0b2554 !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.30) !important;
+}
+html.dark-mode .queue-table th,
+html.dark-mode .queue-table td,
+html.dark-mode .queue-table tbody td,
+html.dark-mode .queue-table tbody th {
+  color: #f8fbff !important;
+}
+html.dark-mode .queue-table th {
+  background: #071b3f !important;
+  border-color: rgba(96,165,250,.30) !important;
+}
+html.dark-mode .queue-table td {
+  background-color: #0d2d65 !important;
+  border-color: rgba(96,165,250,.20) !important;
+}
+html.dark-mode .queue-table tr:hover td {
+  background: rgba(96,165,250,0.16) !important;
+}
+html.dark-mode thead,
+html.dark-mode thead tr,
+html.dark-mode thead th,
+html.dark-mode .table-header {
+  background: #071b3f !important;
+  color: #bcd4ff !important;
+  border-color: rgba(96,165,250,.30) !important;
+}
+html.dark-mode tbody,
+html.dark-mode tbody tr,
+html.dark-mode tbody td,
+html.dark-mode tbody th,
+html.dark-mode tr,
+html.dark-mode td,
+html.dark-mode th {
+  background-color: #0d2d65 !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.24) !important;
+}
+html.dark-mode .tbl-section-emergency {
+  background: #7f1d1d !important;
+  border-bottom: 2px solid #ef4444 !important;
+}
+html.dark-mode .tbl-section-emergency .tbl-section-label-cell {
+  color: #fca5a5 !important;
+  background: transparent !important;
+}
+html.dark-mode .tbl-section-priority {
+  background: #78350f !important;
+  border-bottom: 2px solid #f59e0b !important;
+}
+html.dark-mode .tbl-section-priority .tbl-section-label-cell {
+  color: #fde68a !important;
+  background: transparent !important;
+}
+html.dark-mode .row-emergency td,
+html.dark-mode tr.row-emergency td {
+  background: rgba(220,38,38,.12) !important;
+}
+html.dark-mode .row-priority td,
+html.dark-mode tr.row-priority td {
+  background: rgba(245,158,11,.12) !important;
+}
+html.dark-mode .queue-table tr.row-priority:hover td {
+  background: rgba(245,158,11,.18) !important;
+}
+html.dark-mode .queue-table tr.row-emergency:hover td {
+  background: rgba(220,38,38,.2) !important;
+}
+html.dark-mode tbody tr:nth-child(even) td,
+html.dark-mode tbody tr:nth-child(odd) td,
+html.dark-mode .table-striped tbody tr:nth-of-type(odd),
+html.dark-mode .table-striped tbody tr:nth-of-type(even) {
+  background-color: #0d2d65 !important;
+  color: #f8fbff !important;
+}
+html.dark-mode tbody tr:hover td {
+  background-color: #123a7a !important;
+}
+
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea,
+html.dark-mode .form-control,
+html.dark-mode .form-select,
+html.dark-mode .search-input,
+html.dark-mode .filter-input,
+html.dark-mode .filter-select,
+html.dark-mode .branch-select,
+html.dark-mode .select-control {
+  background: #061a3d !important;
+  color: #f8fbff !important;
+  border: 1px solid rgba(96,165,250,.36) !important;
+  box-shadow: none !important;
+}
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: #9dbcf7 !important;
+  opacity: 1 !important;
+}
+html.dark-mode option {
+  background: #061a3d !important;
+  color: #ffffff !important;
+}
+
+html.dark-mode .btn,
+html.dark-mode button {
+  color: #f8fbff;
+}
+html.dark-mode .btn-outline,
+html.dark-mode .btn-light,
+html.dark-mode .btn-secondary,
+html.dark-mode .btn-print,
+html.dark-mode .btn-modal-cancel,
+html.dark-mode .page-btn,
+html.dark-mode .btn-outline-sm,
+html.dark-mode .btn-hold {
+  background: #0b2554 !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.42) !important;
+}
+html.dark-mode .btn-primary,
+html.dark-mode .btn-main,
+html.dark-mode .btn-view,
+html.dark-mode .btn-call,
+html.dark-mode .btn-save,
+html.dark-mode .page-btn.active {
+  background: #1d5cff !important;
+  border-color: #1d5cff !important;
+  color: #ffffff !important;
+}
+html.dark-mode .btn-danger,
+html.dark-mode .btn-delete,
+html.dark-mode .btn-no-show {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  color: #ffffff !important;
+}
+html.dark-mode .btn-success,
+html.dark-mode .btn-done {
+  background: #16a34a !important;
+  border-color: #16a34a !important;
+  color: #ffffff !important;
+}
+html.dark-mode .btn-print {
+  background: #1e293b !important;
+  color: #93c5fd !important;
+  border-color: #475569 !important;
+}
+html.dark-mode .btn-print:hover {
+  background: #334155 !important;
+}
+html.dark-mode .btn-reset {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  border-color: #991b1b !important;
+  font-weight: 700 !important;
+}
+html.dark-mode .btn-reset:hover {
+  background: #991b1b !important;
+}
+html.dark-mode .btn-logout {
+  background: #0b2554 !important;
+  color: #ffffff !important;
+  border-color: rgba(147,197,253,.45) !important;
+}
+
+html.dark-mode .live-chip {
+  background: #16a34a !important;
+  color: #ffffff !important;
+  border: 1px solid #4ade80 !important;
+  box-shadow: 0 2px 10px rgba(22,163,74,0.35) !important;
+  font-weight: 700 !important;
+}
+html.dark-mode .live-dot {
+  background: #bbf7d0 !important;
+}
+html.dark-mode .time-chip {
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border: 1.5px solid #93c5fd !important;
+  font-weight: 700 !important;
+}
+html.dark-mode .time-chip i,
+html.dark-mode .time-chip span {
+  color: #ffffff !important;
+}
+html.dark-mode .tbl-section-emergency {
+  background: #7f1d1d !important;
+  border-bottom: 2px solid #dc2626 !important;
+}
+html.dark-mode .tbl-section-emergency .tbl-section-label-cell {
+  color: #fca5a5 !important;
+  border-left: 4px solid #dc2626 !important;
+}
+html.dark-mode .tbl-section-priority {
+  background: #fef9c7 !important;
+  border-bottom: 2px solid #f59e0b !important;
+}
+html.dark-mode .tbl-section-priority .tbl-section-label-cell {
+  color: #92400e !important;
+  border-left: 4px solid #f59e0b !important;
+}
+html.dark-mode .row-emergency td,
+html.dark-mode tr.row-emergency td {
+  background: rgba(220,38,38,0.18) !important;
+}
+html.dark-mode .row-priority td,
+html.dark-mode tr.row-priority td {
+  background: rgba(245,158,11,0.16) !important;
+}
+html.dark-mode .b-emergency {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+}
+html.dark-mode .ns-pill.ns-pill-emergency {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  border-color: #991b1b !important;
+}
+html.dark-mode .queue-table tr.row-priority:hover td {
+  background: rgba(245,158,11,0.18) !important;
+}
+html.dark-mode .queue-table tr.row-emergency:hover td {
+  background: rgba(220,38,38,0.18) !important;
+}
+html.dark-mode .ns-number.is-emergency {
+  color: #dc2626 !important;
+}
+html.dark-mode .ns-pill.ns-pill-emergency {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  border-color: #991b1b !important;
+}
+html.dark-mode .ns-type.priority-type {
+  color: #dc2626 !important;
+}
+
+html.dark-mode .badge,
+html.dark-mode .status-badge,
+html.dark-mode .status,
+html.dark-mode .pill,
+html.dark-mode .chip,
+html.dark-mode .admin-tag {
+  border-width: 1px !important;
+  font-weight: 700 !important;
+}
+html.dark-mode .badge-confirmed,
+html.dark-mode .status-confirmed,
+html.dark-mode .confirmed,
+html.dark-mode .badge-active,
+html.dark-mode .active-status {
+  background: rgba(16,185,129,.16) !important;
+  color: #34d399 !important;
+  border-color: rgba(16,185,129,.50) !important;
+}
+html.dark-mode .badge-pending,
+html.dark-mode .status-pending,
+html.dark-mode .pending {
+  background: rgba(245,158,11,.16) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245,158,11,.60) !important;
+}
+html.dark-mode .badge-cancelled,
+html.dark-mode .status-cancelled,
+html.dark-mode .cancelled {
+  background: rgba(239,68,68,.16) !important;
+  color: #f87171 !important;
+  border-color: rgba(239,68,68,.55) !important;
+}
+html.dark-mode .priority-badge,
+html.dark-mode .lane-priority,
+html.dark-mode .b-priority,
+html.dark-mode .badge-priority {
+  background: rgba(245,158,11,.16) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245,158,11,.65) !important;
+}
+html.dark-mode .lane-regular,
+html.dark-mode .badge-regular {
+  background: rgba(59,130,246,.16) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59,130,246,.60) !important;
+}
+
+html.dark-mode .stat-box,
+html.dark-mode .stats-row > div {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.35) !important;
+  color: #f8fbff !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2) !important;
+}
+
+html.dark-mode .stat-label {
+  color: #a3c5ff !important;
+}
+
+html.dark-mode .stat-value {
+  color: #ffffff !important;
+}
+
+html.dark-mode .stat-box .stat-icon,
+html.dark-mode .stats-row .stat-icon {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+html.dark-mode .card-head,
+html.dark-mode .card,
+html.dark-mode .card-body,
+html.dark-mode .card-head-left {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .card-head h6,
+html.dark-mode .card-head-left h6 {
+  color: #ffffff !important;
+}
+
+html.dark-mode .card-head-left p {
+  color: #a3c5ff !important;
+}
+
+html.dark-mode .hicon {
+  background: #2563eb !important;
+  color: #dbeafe !important;
+}
+
+html.dark-mode .filter-bar {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+}
+
+html.dark-mode .filter-bar input,
+html.dark-mode .filter-bar select,
+html.dark-mode .filter-bar button {
+  background: #071a3d !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.3) !important;
+}
+
+html.dark-mode .filter-bar input::placeholder {
+  color: #8fb7ff !important;
+}
+
+html.dark-mode .btn-export {
+  background: #1d5cff !important;
+  color: #ffffff !important;
+  border-color: #1d5cff !important;
+}
+
+html.dark-mode .btn-export:hover {
+  background: #1a50cc !important;
+}
+
+html.dark-mode .branch-tabs {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+}
+
+html.dark-mode .branch-tab {
+  background: rgba(255,255,255,.05) !important;
+  color: #a3c5ff !important;
+  border: 1px solid rgba(96,165,250,.2) !important;
+}
+
+html.dark-mode .branch-tab:hover:not(:disabled) {
+  background: rgba(59,130,246,.2) !important;
+  color: #dbeafe !important;
+}
+
+html.dark-mode .branch-tab.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 4px 12px rgba(37,99,235,.3) !important;
+}
+
+html.dark-mode .branch-tab:disabled {
+  opacity: 0.4 !important;
+}
+
+html.dark-mode .next-patient-box {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .npb-num {
+  background: #2563eb !important;
+  color: #dbeafe !important;
+  border-color: rgba(37,99,235,.5) !important;
+}
+
+html.dark-mode .npb-num.regular {
+  background: #1e3a5f !important;
+  color: #60a5fa !important;
+}
+
+html.dark-mode .npb-num.priority {
+  background: #3d2b0a !important;
+  color: #fbbf24 !important;
+}
+
+html.dark-mode .npb-num.emergency {
+  background: #3d0a0a !important;
+  color: #f87171 !important;
+}
+
+html.dark-mode .npb-name {
+  color: #ffffff !important;
+}
+
+html.dark-mode .npb-svc {
+  color: #a3c5ff !important;
+}
+
+html.dark-mode .npb-type {
+  color: #fbbf24 !important;
+}
+
+html.dark-mode .now-serving,
+html.dark-mode .serving-card,
+html.dark-mode .serving-row {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .queue-stat,
+html.dark-mode .queue-stat-card {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .queue-stat-value {
+  color: #ffffff !important;
+}
+
+html.dark-mode .queue-stat-label {
+  color: #a3c5ff !important;
+}
+
+html.dark-mode .queue-table-card,
+html.dark-mode .queue-card-container {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+}
+
+html.dark-mode .queue-item,
+html.dark-mode .queue-item-row {
+  background: transparent !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.2) !important;
+}
+
+html.dark-mode .queue-item:hover {
+  background: rgba(59,130,246,.1) !important;
+}
+
+html.dark-mode .btn-call-next,
+html.dark-mode .btn-serve,
+html.dark-mode .btn-primary {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+}
+
+html.dark-mode .btn-call-next:hover,
+html.dark-mode .btn-serve:hover,
+html.dark-mode .btn-primary:hover {
+  background: #1d4ed8 !important;
+}
+
+html.dark-mode .btn-hold,
+html.dark-mode .btn-action {
+  background: rgba(255,255,255,.08) !important;
+  color: #a3c5ff !important;
+  border-color: rgba(96,165,250,.3) !important;
+}
+
+html.dark-mode .btn-hold:hover,
+html.dark-mode .btn-action:hover {
+  background: rgba(59,130,246,.2) !important;
+  color: #dbeafe !important;
+}
+
+html.dark-mode .progress,
+html.dark-mode .progress-bg,
+html.dark-mode .bar-bg {
+  background: rgba(147,197,253,.22) !important;
+}
+html.dark-mode .progress-bar,
+html.dark-mode .bar-fill {
+  background: #3b82f6 !important;
+}
+html.dark-mode .heat-cell,
+html.dark-mode .heatmap-cell {
+  color: #ffffff !important;
+  border-color: #061a3d !important;
+}
+html.dark-mode .live-indicator,
+html.dark-mode .live,
+html.dark-mode .online-dot {
+  color: #34d399 !important;
+}
+
+html.dark-mode .avatar,
+html.dark-mode .patient-avatar,
+html.dark-mode .profile-avatar,
+html.dark-mode .user-avatar,
+html.dark-mode .initials,
+html.dark-mode .avatar-circle {
+  background: #dbeafe !important;
+  color: #0b2d68 !important;
+  border: 2px solid rgba(147,197,253,.6) !important;
+}
+html.dark-mode .profile-name,
+html.dark-mode .patient-name,
+html.dark-mode .user-name {
+  color: #ffffff !important;
+}
+html.dark-mode .profile-meta,
+html.dark-mode .patient-id,
+html.dark-mode .user-email {
+  color: #bcd4ff !important;
+}
+
+html.dark-mode .dark-mode-toggle {
+  background: #123a7a !important;
+  border: 1px solid rgba(147,197,253,.50) !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 18px rgba(0,0,0,.18) !important;
+}
+html.dark-mode .dark-mode-toggle:hover { background:#1d5cff !important; }
+
+html.dark-mode .add-form {
+  background: #0d2d65 !important;
+  border-color: rgba(96,165,250,.3) !important;
+}
+
+html.dark-mode .add-form input,
+html.dark-mode .add-form select {
+  background: #071a3d !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.3) !important;
+}
+
+html.dark-mode .add-form input::placeholder {
+  color: #8fb7ff !important;
+}
+
+html.dark-mode .add-form input:focus,
+html.dark-mode .add-form select:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.15) !important;
+}
+
+html.dark-mode .btn-add {
+  background: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+}
+
+html.dark-mode .btn-add:hover {
+  background: #1d4ed8 !important;
+}
+
+html.dark-mode .content-wrapper,
+html.dark-mode .page-wrapper,
+html.dark-mode .dashboard-wrapper,
+html.dark-mode .patient-main,
+html.dark-mode .patient-content,
+html.dark-mode .admin-main,
+html.dark-mode .wrapper,
+html.dark-mode .container,
+html.dark-mode .container-fluid {
+  background: transparent !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .appointment-card,
+html.dark-mode .appointment-item,
+html.dark-mode .appointment-box,
+html.dark-mode .appt-box,
+html.dark-mode .book-section,
+html.dark-mode .booking-card,
+html.dark-mode .booking-box,
+html.dark-mode .queue-box,
+html.dark-mode .qr-card,
+html.dark-mode .qr-box,
+html.dark-mode .profile-section,
+html.dark-mode .profile-info,
+html.dark-mode .profile-details,
+html.dark-mode .detail-box,
+html.dark-mode .details-box,
+html.dark-mode .patient-card,
+html.dark-mode .patient-box,
+html.dark-mode .record-card,
+html.dark-mode .record-box,
+html.dark-mode .report-card,
+html.dark-mode .report-box,
+html.dark-mode .backup-card,
+html.dark-mode .backup-box,
+html.dark-mode .archive-card,
+html.dark-mode .archive-box,
+html.dark-mode .log-card,
+html.dark-mode .log-box,
+html.dark-mode .user-card,
+html.dark-mode .user-box,
+html.dark-mode .center-card,
+html.dark-mode .health-card,
+html.dark-mode .step-card,
+html.dark-mode .feature-card,
+html.dark-mode .contact-card,
+html.dark-mode .terms-card,
+html.dark-mode .privacy-card,
+html.dark-mode .empty-state,
+html.dark-mode .empty-box,
+html.dark-mode .summary-box,
+html.dark-mode .analytics-card,
+html.dark-mode .insight-card,
+html.dark-mode .insight-box,
+html.dark-mode .alert-card,
+html.dark-mode .alert-box,
+html.dark-mode .legend-card,
+html.dark-mode .legend-box,
+html.dark-mode .hm-empty,
+html.dark-mode .insight-item,
+html.dark-mode .service-bar-row,
+html.dark-mode .bh-card,
+html.dark-mode .peak-row,
+html.dark-mode .modal-card,
+html.dark-mode .form-card,
+html.dark-mode .form-box,
+html.dark-mode .table-box,
+html.dark-mode .pagination,
+html.dark-mode .pagination-wrap,
+html.dark-mode .page-controls,
+html.dark-mode .profile-completeness,
+html.dark-mode .completeness-card,
+html.dark-mode .stats-card,
+html.dark-mode .rhu-info,
+html.dark-mode .rhu-details,
+html.dark-mode .map-card,
+html.dark-mode .map-box {
+  background: linear-gradient(145deg,#0d2d65 0%,#0a2554 100%) !important;
+  background-color: #0d2d65 !important;
+  border-color: rgba(96,165,250,.35) !important;
+  color: #f8fbff !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,.18) !important;
+}
+
+html.dark-mode .bg-white,
+html.dark-mode .bg-light,
+html.dark-mode .bg-body,
+html.dark-mode .bg-gray,
+html.dark-mode .bg-gray-50,
+html.dark-mode .bg-gray-100,
+html.dark-mode .bg-slate-50,
+html.dark-mode .bg-slate-100,
+html.dark-mode .light-card,
+html.dark-mode .white-card,
+html.dark-mode .white-box,
+html.dark-mode .light-box {
+  background: #0d2d65 !important;
+  background-color: #0d2d65 !important;
+  border-color: rgba(96,165,250,.35) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .appt-table,
+html.dark-mode .patient-table,
+html.dark-mode .reports-table,
+html.dark-mode .archive-table,
+html.dark-mode .logs-table,
+html.dark-mode .users-table,
+html.dark-mode .backup-table {
+  background: #0b2554 !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.30) !important;
+}
+html.dark-mode .appt-table th,
+html.dark-mode .patient-table th,
+html.dark-mode .reports-table th,
+html.dark-mode .archive-table th,
+html.dark-mode .logs-table th,
+html.dark-mode .users-table th,
+html.dark-mode .backup-table th {
+  background: #071b3f !important;
+  color: #bcd4ff !important;
+  border-color: rgba(96,165,250,.30) !important;
+}
+html.dark-mode .appt-table td,
+html.dark-mode .patient-table td,
+html.dark-mode .reports-table td,
+html.dark-mode .archive-table td,
+html.dark-mode .logs-table td,
+html.dark-mode .users-table td,
+html.dark-mode .backup-table td {
+  background: #0d2d65 !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.22) !important;
+}
+html.dark-mode .appt-table tr:hover td,
+html.dark-mode .patient-table tr:hover td,
+html.dark-mode .reports-table tr:hover td,
+html.dark-mode .archive-table tr:hover td,
+html.dark-mode .logs-table tr:hover td,
+html.dark-mode .users-table tr:hover td,
+html.dark-mode .backup-table tr:hover td {
+  background: #123a7a !important;
+}
+html.dark-mode tr.row-priority td,
+html.dark-mode .appt-table tr.row-priority td,
+html.dark-mode .queue-table tr.row-priority td {
+  background: rgba(245,158,11,.16) !important;
+  color: #fff7d6 !important;
+}
+html.dark-mode tr.row-emergency td,
+html.dark-mode .queue-table tr.row-emergency td {
+  background: rgba(220,38,38,.18) !important;
+  color: #ffe1e1 !important;
+}
+html.dark-mode .tbl-section-priority,
+html.dark-mode .tbl-section-priority td,
+html.dark-mode .tbl-section-priority th {
+  background: #3b2708 !important;
+  color: #fde68a !important;
+  border-color: rgba(245,158,11,.55) !important;
+}
+html.dark-mode .tbl-section-emergency,
+html.dark-mode .tbl-section-emergency td,
+html.dark-mode .tbl-section-emergency th {
+  background: #450a0a !important;
+  color: #fca5a5 !important;
+  border-color: rgba(239,68,68,.55) !important;
+}
+html.dark-mode .tbl-section-label-cell {
+  background: transparent !important;
+}
+
+html.dark-mode .si-blue,
+html.dark-mode .bs-blue,
+html.dark-mode .mti-blue,
+html.dark-mode .alert-blue {
+  background: rgba(59,130,246,.18) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59,130,246,.55) !important;
+}
+html.dark-mode .si-green,
+html.dark-mode .bs-green,
+html.dark-mode .alert-green,
+html.dark-mode .trend-down {
+  background: rgba(22,163,74,.18) !important;
+  color: #4ade80 !important;
+  border-color: rgba(22,163,74,.55) !important;
+}
+html.dark-mode .si-amber,
+html.dark-mode .bs-amber,
+html.dark-mode .alert-amber,
+html.dark-mode .trend-warning {
+  background: rgba(245,158,11,.18) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245,158,11,.60) !important;
+}
+html.dark-mode .si-red,
+html.dark-mode .bs-red,
+html.dark-mode .mti-red,
+html.dark-mode .alert-red,
+html.dark-mode .trend-up {
+  background: rgba(239,68,68,.18) !important;
+  color: #f87171 !important;
+  border-color: rgba(239,68,68,.58) !important;
+}
+
+html.dark-mode .text-danger,
+html.dark-mode .text-red,
+html.dark-mode .danger-text,
+html.dark-mode .error-text,
+html.dark-mode .required,
+html.dark-mode .invalid,
+html.dark-mode [style*="color:#dc2626"],
+html.dark-mode [style*="color: #dc2626"],
+html.dark-mode [style*="color:#b91c1c"],
+html.dark-mode [style*="color: #b91c1c"],
+html.dark-mode [style*="color:#991b1b"],
+html.dark-mode [style*="color: #991b1b"],
+html.dark-mode [style*="color:red"],
+html.dark-mode [style*="color: red"] {
+  color: #f87171 !important;
+}
+html.dark-mode .text-warning,
+html.dark-mode .text-yellow,
+html.dark-mode .text-amber,
+html.dark-mode .warning-text,
+html.dark-mode .priority-text,
+html.dark-mode [style*="color:#f59e0b"],
+html.dark-mode [style*="color: #f59e0b"],
+html.dark-mode [style*="color:#d97706"],
+html.dark-mode [style*="color: #d97706"],
+html.dark-mode [style*="color:#a16207"],
+html.dark-mode [style*="color: #a16207"],
+html.dark-mode [style*="color:#92400e"],
+html.dark-mode [style*="color: #92400e"] {
+  color: #fbbf24 !important;
+}
+html.dark-mode .text-success,
+html.dark-mode .text-green,
+html.dark-mode .success-text,
+html.dark-mode [style*="color:#15803d"],
+html.dark-mode [style*="color: #15803d"],
+html.dark-mode [style*="color:#166534"],
+html.dark-mode [style*="color: #166534"],
+html.dark-mode [style*="color:#16a34a"],
+html.dark-mode [style*="color: #16a34a"] {
+  color: #4ade80 !important;
+}
+html.dark-mode .text-primary,
+html.dark-mode .text-blue,
+html.dark-mode .blue-text,
+html.dark-mode [style*="color:#1e40af"],
+html.dark-mode [style*="color: #1e40af"],
+html.dark-mode [style*="color:#1d4ed8"],
+html.dark-mode [style*="color: #1d4ed8"],
+html.dark-mode [style*="color:#2563eb"],
+html.dark-mode [style*="color: #2563eb"] {
+  color: #93c5fd !important;
+}
+html.dark-mode [style*="color:#9d174d"],
+html.dark-mode [style*="color: #9d174d"],
+html.dark-mode .text-pink,
+html.dark-mode .pwd-text {
+  color: #f9a8d4 !important;
+}
+
+html.dark-mode .b-confirmed,
+html.dark-mode .badge-confirmed,
+html.dark-mode .status-confirmed,
+html.dark-mode .b-active,
+html.dark-mode .badge-active {
+  background: rgba(22,163,74,.18) !important;
+  color: #4ade80 !important;
+  border-color: rgba(22,163,74,.58) !important;
+}
+html.dark-mode .b-pending,
+html.dark-mode .badge-pending,
+html.dark-mode .status-pending,
+html.dark-mode .b-priority,
+html.dark-mode .badge-priority,
+html.dark-mode .priority-badge {
+  background: rgba(245,158,11,.18) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245,158,11,.65) !important;
+}
+html.dark-mode .b-cancelled,
+html.dark-mode .badge-cancelled,
+html.dark-mode .status-cancelled,
+html.dark-mode .b-emergency,
+html.dark-mode .badge-emergency {
+  background: rgba(239,68,68,.18) !important;
+  color: #f87171 !important;
+  border-color: rgba(239,68,68,.60) !important;
+}
+html.dark-mode .b-done,
+html.dark-mode .badge-serving,
+html.dark-mode .badge-waiting,
+html.dark-mode .b-regular,
+html.dark-mode .badge-regular {
+  background: rgba(59,130,246,.18) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59,130,246,.58) !important;
+}
+
+html.dark-mode [style*="background:#fffbeb"],
+html.dark-mode [style*="background: #fffbeb"],
+html.dark-mode [style*="background:#fef9c3"],
+html.dark-mode [style*="background: #fef9c3"],
+html.dark-mode [style*="background:#fef3c7"],
+html.dark-mode [style*="background: #fef3c7"] {
+  background: rgba(245,158,11,.14) !important;
+  background-color: rgba(245,158,11,.14) !important;
+  color: #fbbf24 !important;
+  border-color: rgba(245,158,11,.55) !important;
+}
+html.dark-mode [style*="background:#fee2e2"],
+html.dark-mode [style*="background: #fee2e2"],
+html.dark-mode [style*="background:#fef2f2"],
+html.dark-mode [style*="background: #fef2f2"] {
+  background: rgba(239,68,68,.14) !important;
+  background-color: rgba(239,68,68,.14) !important;
+  color: #f87171 !important;
+  border-color: rgba(239,68,68,.55) !important;
+}
+html.dark-mode [style*="background:#dcfce7"],
+html.dark-mode [style*="background: #dcfce7"] {
+  background: rgba(22,163,74,.14) !important;
+  background-color: rgba(22,163,74,.14) !important;
+  color: #4ade80 !important;
+  border-color: rgba(22,163,74,.55) !important;
+}
+html.dark-mode [style*="background:#dbeafe"],
+html.dark-mode [style*="background: #dbeafe"],
+html.dark-mode [style*="background:#eff6ff"],
+html.dark-mode [style*="background: #eff6ff"] {
+  background: rgba(59,130,246,.14) !important;
+  background-color: rgba(59,130,246,.14) !important;
+  color: #93c5fd !important;
+  border-color: rgba(59,130,246,.55) !important;
+}
+html.dark-mode [style*="background:white"],
+html.dark-mode [style*="background: white"],
+html.dark-mode [style*="background:#fff"],
+html.dark-mode [style*="background: #fff"],
+html.dark-mode [style*="background:#ffffff"],
+html.dark-mode [style*="background: #ffffff"],
+html.dark-mode [style*="background-color:white"],
+html.dark-mode [style*="background-color: white"],
+html.dark-mode [style*="background-color:#fff"],
+html.dark-mode [style*="background-color: #fff"],
+html.dark-mode [style*="background-color:#ffffff"],
+html.dark-mode [style*="background-color: #ffffff"] {
+  background: #0d2d65 !important;
+  background-color: #0d2d65 !important;
+  border-color: rgba(96,165,250,.35) !important;
+}
+
+html.dark-mode hr,
+html.dark-mode .divider,
+html.dark-mode .mob-divider,
+html.dark-mode .border-top,
+html.dark-mode .border-bottom,
+html.dark-mode .modal-header,
+html.dark-mode .modal-footer,
+html.dark-mode .simple-modal .modal-header,
+html.dark-mode .simple-modal .modal-footer {
+  border-color: rgba(96,165,250,.28) !important;
+}
+
+html.dark-mode .progress-track,
+html.dark-mode .svc-track,
+html.dark-mode .bh-track,
+html.dark-mode .peak-track,
+html.dark-mode .completeness-track {
+  background: rgba(147,197,253,.20) !important;
+}
+
+html.dark-mode canvas {
+  background-color: transparent !important;
+}
+
+html.dark-mode .demo-stat-row {
+  background: transparent !important;
+}
+
+html.dark-mode .demo-pill,
+html.dark-mode .demographic-card,
+html.dark-mode .demographics-card,
+html.dark-mode .patient-demo-card,
+html.dark-mode .patient-demographic-card,
+html.dark-mode .report-mini-card,
+html.dark-mode .mini-stat-card,
+html.dark-mode .insight-stat-card {
+  background: linear-gradient(145deg, #102b60 0%, #0b2452 100%) !important;
+  background-color: #102b60 !important;
+  border: 1px solid rgba(96, 165, 250, .35) !important;
+  color: #f8fbff !important;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, .20) !important;
+}
+
+html.dark-mode .demo-pill-label,
+html.dark-mode .demographic-label,
+html.dark-mode .patient-demo-label,
+html.dark-mode .mini-stat-label {
+  color: #c7d9ff !important;
+}
+
+html.dark-mode .demo-pill-value,
+html.dark-mode .demographic-value,
+html.dark-mode .patient-demo-value,
+html.dark-mode .mini-stat-value {
+  color: #ffffff !important;
+}
+
+html.dark-mode .demo-pill-icon,
+html.dark-mode .insight-dot,
+html.dark-mode .insight-icon,
+html.dark-mode .metric-icon,
+html.dark-mode .legend-dot,
+html.dark-mode .color-dot,
+html.dark-mode .status-dot {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+html.dark-mode .demo-pill-icon i,
+html.dark-mode .insight-icon i,
+html.dark-mode .metric-icon i,
+html.dark-mode .si-blue i,
+html.dark-mode .si-green i,
+html.dark-mode .si-amber i,
+html.dark-mode .si-red i,
+html.dark-mode .si-purple i,
+html.dark-mode .bs-blue i,
+html.dark-mode .bs-green i,
+html.dark-mode .bs-amber i,
+html.dark-mode .bs-red i,
+html.dark-mode .bs-purple i {
+  color: inherit !important;
+}
+
+html.dark-mode .demo-pill-icon.si-blue,
+html.dark-mode .si-blue,
+html.dark-mode .bs-blue,
+html.dark-mode .mti-blue,
+html.dark-mode .alert-blue {
+  background: rgba(37, 99, 235, .95) !important;
+  color: #ffffff !important;
+  border-color: rgba(147, 197, 253, .60) !important;
+}
+
+html.dark-mode .demo-pill-icon.si-green,
+html.dark-mode .si-green,
+html.dark-mode .bs-green,
+html.dark-mode .mti-green,
+html.dark-mode .alert-green {
+  background: rgba(22, 163, 74, .95) !important;
+  color: #ffffff !important;
+  border-color: rgba(134, 239, 172, .60) !important;
+}
+
+html.dark-mode .demo-pill-icon.si-amber,
+html.dark-mode .si-amber,
+html.dark-mode .bs-amber,
+html.dark-mode .mti-amber,
+html.dark-mode .alert-amber {
+  background: rgba(245, 158, 11, .95) !important;
+  color: #ffffff !important;
+  border-color: rgba(253, 230, 138, .65) !important;
+}
+
+html.dark-mode .demo-pill-icon.si-red,
+html.dark-mode .si-red,
+html.dark-mode .bs-red,
+html.dark-mode .mti-red,
+html.dark-mode .alert-red {
+  background: rgba(239, 68, 68, .95) !important;
+  color: #ffffff !important;
+  border-color: rgba(252, 165, 165, .65) !important;
+}
+
+html.dark-mode .demo-pill-icon.si-purple,
+html.dark-mode .si-purple,
+html.dark-mode .bs-purple,
+html.dark-mode .mti-purple,
+html.dark-mode .alert-purple {
+  background: rgba(124, 58, 237, .95) !important;
+  color: #ffffff !important;
+  border-color: rgba(196, 181, 253, .65) !important;
+}
+
+html.dark-mode .demo-pill .si-blue ~ div .demo-pill-value,
+html.dark-mode .text-blue,
+html.dark-mode .blue-text,
+html.dark-mode .percent-blue {
+  color: #60a5fa !important;
+}
+html.dark-mode .demo-pill .si-green ~ div .demo-pill-value,
+html.dark-mode .text-green,
+html.dark-mode .success-text,
+html.dark-mode .percent-green {
+  color: #4ade80 !important;
+}
+html.dark-mode .demo-pill .si-amber ~ div .demo-pill-value,
+html.dark-mode .text-yellow,
+html.dark-mode .text-amber,
+html.dark-mode .warning-text,
+html.dark-mode .percent-yellow,
+html.dark-mode .percent-amber {
+  color: #fbbf24 !important;
+}
+html.dark-mode .demo-pill .si-red ~ div .demo-pill-value,
+html.dark-mode .text-red,
+html.dark-mode .danger-text,
+html.dark-mode .percent-red {
+  color: #f87171 !important;
+}
+html.dark-mode .demo-pill .si-purple ~ div .demo-pill-value,
+html.dark-mode .text-purple,
+html.dark-mode .percent-purple {
+  color: #c084fc !important;
+}
+
+html.dark-mode td div[style*="background:#f1f5f9"],
+html.dark-mode td div[style*="background: #f1f5f9"],
+html.dark-mode td div[style*="background:#e5e7eb"],
+html.dark-mode td div[style*="background: #e5e7eb"] {
+  background: rgba(147, 197, 253, .18) !important;
+  background-color: rgba(147, 197, 253, .18) !important;
+}
+
+html.dark-mode td div[style*="background:#1e40af"],
+html.dark-mode td div[style*="background: #1e40af"],
+html.dark-mode td div[style*="background:#2563eb"],
+html.dark-mode td div[style*="background: #2563eb"] {
+  background: #3b82f6 !important;
+  background-color: #3b82f6 !important;
+}
+
+html.dark-mode .insight-dot[style*="#dc2626"],
+html.dark-mode .insight-dot[style*="#ef4444"],
+html.dark-mode .legend-dot[style*="#dc2626"],
+html.dark-mode .color-dot[style*="#dc2626"] {
+  background: #ef4444 !important;
+  background-color: #ef4444 !important;
+}
+html.dark-mode .insight-dot[style*="#f59e0b"],
+html.dark-mode .insight-dot[style*="#facc15"],
+html.dark-mode .legend-dot[style*="#f59e0b"],
+html.dark-mode .color-dot[style*="#f59e0b"] {
+  background: #f59e0b !important;
+  background-color: #f59e0b !important;
+}
+html.dark-mode .insight-dot[style*="#16a34a"],
+html.dark-mode .insight-dot[style*="#22c55e"],
+html.dark-mode .legend-dot[style*="#16a34a"],
+html.dark-mode .color-dot[style*="#16a34a"] {
+  background: #22c55e !important;
+  background-color: #22c55e !important;
+}
+html.dark-mode .insight-dot[style*="#1e40af"],
+html.dark-mode .insight-dot[style*="#2563eb"],
+html.dark-mode .legend-dot[style*="#1e40af"],
+html.dark-mode .color-dot[style*="#1e40af"] {
+  background: #3b82f6 !important;
+  background-color: #3b82f6 !important;
+}
+
+html.dark-mode .section-card .section-body > div:not(.demo-stat-row):not(.data-table-wrap),
+html.dark-mode .chart-card > div:not(.chart-wrap),
+html.dark-mode .report-card > div,
+html.dark-mode .analytics-card > div,
+html.dark-mode .insight-card > div {
+  border-color: rgba(96, 165, 250, .22) !important;
+}
+
+html.dark-mode .progress-track,
+html.dark-mode .progress,
+html.dark-mode .progress-bar-wrap,
+html.dark-mode .bar-bg,
+html.dark-mode .svc-track,
+html.dark-mode .bh-track,
+html.dark-mode .peak-track,
+html.dark-mode .completeness-track {
+  background: rgba(219,234,254,.24) !important;
+  border: 1px solid rgba(147,197,253,.22) !important;
+  box-shadow: inset 0 0 0 1px rgba(15,23,42,.25) !important;
+}
+html.dark-mode .progress-fill,
+html.dark-mode .progress-bar,
+html.dark-mode .progress-bar-fill,
+html.dark-mode .bar-fill,
+html.dark-mode .svc-fill,
+html.dark-mode .bh-fill,
+html.dark-mode .peak-fill,
+html.dark-mode .completeness-fill {
+  background: linear-gradient(90deg,#22c55e,#60a5fa) !important;
+  box-shadow: 0 0 10px rgba(34,197,94,.35) !important;
+}
+html.dark-mode .branch-queue-card:nth-of-type(4n) .progress-fill,
+html.dark-mode .branch-queue-card:nth-of-type(4n) .bar-fill {
+  background: linear-gradient(90deg,#fbbf24,#f59e0b) !important;
+}
+
+html.dark-mode .ns-pill {
+  background: rgba(219,234,254,.16) !important;
+  color: #dbeafe !important;
+  border: 1px solid rgba(147,197,253,.48) !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18) !important;
+}
+html.dark-mode .ns-pill i,
+html.dark-mode .ns-pill span { color: #dbeafe !important; }
+html.dark-mode .ns-pill.ns-pill-priority,
+html.dark-mode .priority-type,
+html.dark-mode .b-priority,
+html.dark-mode .badge-priority,
+html.dark-mode .lane-priority,
+html.dark-mode .priority-badge {
+  background: rgba(245,158,11,.22) !important;
+  color: #fde68a !important;
+  border-color: rgba(245,158,11,.75) !important;
+}
+html.dark-mode .ns-pill.ns-pill-emergency,
+html.dark-mode .b-emergency,
+html.dark-mode .badge-emergency {
+  background: rgba(239,68,68,.22) !important;
+  color: #fecaca !important;
+  border-color: rgba(239,68,68,.75) !important;
+}
+html.dark-mode .b-serving,
+html.dark-mode .badge-serving {
+  background: rgba(59,130,246,.22) !important;
+  color: #bfdbfe !important;
+  border-color: rgba(59,130,246,.70) !important;
+}
+html.dark-mode .b-waiting,
+html.dark-mode .badge-waiting {
+  background: rgba(148,163,184,.18) !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(148,163,184,.45) !important;
+}
+html.dark-mode .tbl-section-priority,
+html.dark-mode .tbl-section-priority td,
+html.dark-mode .tbl-section-priority th {
+  background: rgba(245,158,11,.18) !important;
+  color: #fde68a !important;
+  border-color: rgba(245,158,11,.70) !important;
+}
+html.dark-mode .tbl-section-regular,
+html.dark-mode .tbl-section-regular td,
+html.dark-mode .tbl-section-regular th {
+  background: rgba(59,130,246,.10) !important;
+  color: #dbeafe !important;
+  border-color: rgba(96,165,250,.30) !important;
+}
+html.dark-mode .queue-table tr.row-priority td {
+  background: rgba(245,158,11,.12) !important;
+  color: #fff7d6 !important;
+}
+html.dark-mode .queue-table tr.row-serving td {
+  background: rgba(59,130,246,.18) !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .pat-avatar,
+html.dark-mode .pat-modal-avatar,
+html.dark-mode .patient-avatar,
+html.dark-mode .user-avatar,
+html.dark-mode .session-avatar,
+html.dark-mode .avatar-circle,
+html.dark-mode .initials {
+  background: linear-gradient(135deg,#bfdbfe,#60a5fa) !important;
+  color: #08245a !important;
+  border: 2px solid rgba(219,234,254,.85) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25) !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+}
+html.dark-mode .ua-admin,
+html.dark-mode .badge-admin {
+  background: rgba(124,58,237,.25) !important;
+  color: #ddd6fe !important;
+  border-color: rgba(196,181,253,.65) !important;
+}
+html.dark-mode .ua-rhu,
+html.dark-mode .badge-rhu {
+  background: rgba(59,130,246,.25) !important;
+  color: #bfdbfe !important;
+  border-color: rgba(147,197,253,.65) !important;
+}
+html.dark-mode .b-philhealth,
+html.dark-mode .b-active,
+html.dark-mode .badge-active,
+html.dark-mode .badge-online,
+html.dark-mode .ba-view,
+html.dark-mode .b-done,
+html.dark-mode .badge-confirmed,
+html.dark-mode .badge-backup,
+html.dark-mode .badge-restore {
+  background: rgba(22,163,74,.20) !important;
+  color: #86efac !important;
+  border-color: rgba(34,197,94,.70) !important;
+}
+html.dark-mode .b-inactive,
+html.dark-mode .badge-inactive,
+html.dark-mode .badge-offline,
+html.dark-mode .b-cancelled,
+html.dark-mode .ba-cancel,
+html.dark-mode .ba-delete {
+  background: rgba(239,68,68,.20) !important;
+  color: #fca5a5 !important;
+  border-color: rgba(239,68,68,.70) !important;
+}
+html.dark-mode .b-4ps,
+html.dark-mode .ba-edit,
+html.dark-mode .b-missed {
+  background: rgba(245,158,11,.22) !important;
+  color: #fde68a !important;
+  border-color: rgba(245,158,11,.72) !important;
+}
+html.dark-mode .b-senior {
+  background: rgba(245,158,11,.22) !important;
+  color: #fde68a !important;
+  border-color: rgba(245,158,11,.72) !important;
+}
+html.dark-mode .b-pwd {
+  background: rgba(236,72,153,.22) !important;
+  color: #f9a8d4 !important;
+  border-color: rgba(236,72,153,.70) !important;
+}
+html.dark-mode .b-none,
+html.dark-mode .b-noshow,
+html.dark-mode .b-archived,
+html.dark-mode .ba-logout,
+html.dark-mode .ba-other {
+  background: rgba(148,163,184,.18) !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(148,163,184,.45) !important;
+}
+
+html.dark-mode .insight-list,
+html.dark-mode .insight-row,
+html.dark-mode .insight-item {
+  background: rgba(6,26,61,.35) !important;
+  color: #f8fbff !important;
+  border-color: rgba(96,165,250,.22) !important;
+}
+html.dark-mode .insight-dot,
+html.dark-mode .legend-dot,
+html.dark-mode .color-dot,
+html.dark-mode .status-dot {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  border-radius: 999px;
+  opacity: 1 !important;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.06) !important;
+}
+html.dark-mode .insight-dot:nth-child(1),
+html.dark-mode .insight-item:nth-child(1) .insight-dot { background:#ef4444 !important; }
+html.dark-mode .insight-item:nth-child(2) .insight-dot { background:#2563eb !important; }
+html.dark-mode .insight-item:nth-child(3) .insight-dot { background:#3b82f6 !important; }
+html.dark-mode .insight-item:nth-child(4) .insight-dot { background:#f59e0b !important; }
+html.dark-mode .insight-item:nth-child(5) .insight-dot { background:#22c55e !important; }
+html.dark-mode .si-blue,
+html.dark-mode .demo-pill-icon.si-blue,
+html.dark-mode .ic-blue { background:#2563eb !important; color:#fff !important; }
+html.dark-mode .si-green,
+html.dark-mode .demo-pill-icon.si-green,
+html.dark-mode .ic-green { background:#16a34a !important; color:#fff !important; }
+html.dark-mode .si-amber,
+html.dark-mode .demo-pill-icon.si-amber,
+html.dark-mode .ic-amber { background:#f59e0b !important; color:#fff !important; }
+html.dark-mode .si-red,
+html.dark-mode .demo-pill-icon.si-red,
+html.dark-mode .ic-red { background:#ef4444 !important; color:#fff !important; }
+html.dark-mode .si-purple,
+html.dark-mode .demo-pill-icon.si-purple,
+html.dark-mode .ic-purple { background:#7c3aed !important; color:#fff !important; }
+html.dark-mode .demo-pill,
+html.dark-mode .demo-stat-row > div {
+  background: #102b60 !important;
+  border-color: rgba(96,165,250,.35) !important;
+  color: #f8fbff !important;
+}
+
+/* session check */
+html.dark-mode .session-row,
+html.dark-mode .user-row,
+html.dark-mode .active-session-row,
+html.dark-mode .user-cell,
+html.dark-mode .session-name,
+html.dark-mode .session-meta,
+html.dark-mode .sub-text {
+  color: #f8fbff !important;
+  background: transparent !important;
+}
+html.dark-mode .user-cell strong,
+html.dark-mode .session-row strong,
+html.dark-mode .user-name,
+html.dark-mode .session-name { color: #ffffff !important; }
+html.dark-mode .user-cell .sub-text,
+html.dark-mode .session-meta,
+html.dark-mode .user-email { color: #bcd4ff !important; }
+
+html.dark-mode .count-badge,
+html.dark-mode .size-chip {
+  background: rgba(219,234,254,.18) !important;
+  color: #dbeafe !important;
+  border: 1px solid rgba(147,197,253,.50) !important;
+}
+html.dark-mode .badge-action,
+html.dark-mode .badge-action * { font-weight: 800 !important; }
+html.dark-mode .ba-login { background: rgba(22,163,74,.20) !important; color:#86efac !important; border-color:rgba(34,197,94,.70) !important; }
+html.dark-mode .ba-confirm { background: rgba(59,130,246,.22) !important; color:#bfdbfe !important; border-color:rgba(96,165,250,.70) !important; }
+html.dark-mode .ba-add,
+html.dark-mode .ba-queue { background: rgba(124,58,237,.22) !important; color:#ddd6fe !important; border-color:rgba(196,181,253,.65) !important; }
+html.dark-mode .ba-export { background: rgba(14,165,233,.22) !important; color:#bae6fd !important; border-color:rgba(125,211,252,.65) !important; }
+html.dark-mode .btn-danger-sm,
+html.dark-mode .btn-red-sm,
+html.dark-mode .btn-delete,
+html.dark-mode .btn-modal-red,
+html.dark-mode .btn-clear-danger {
+  background:#dc2626 !important;
+  color:#ffffff !important;
+  border-color:#f87171 !important;
+  opacity: 1 !important;
+}
+html.dark-mode .btn-clear,
+html.dark-mode .btn-outline-sm,
+html.dark-mode .btn-outline,
+html.dark-mode .btn-modal-cancel {
+  background:#14346d !important;
+  color:#f8fbff !important;
+  border-color:rgba(147,197,253,.46) !important;
+  opacity: 1 !important;
+}
+html.dark-mode button:disabled,
+html.dark-mode .btn:disabled,
+html.dark-mode .btn-red-sm:disabled,
+html.dark-mode .btn-danger-sm:disabled,
+html.dark-mode .btn-delete:disabled {
+  background:#334155 !important;
+  color:#cbd5e1 !important;
+  border-color:#64748b !important;
+  opacity:.78 !important;
+}
+
+html.dark-mode .admin-only-notice,
+html.dark-mode .staff-notice,
+html.dark-mode .info-notice,
+html.dark-mode .notice-box,
+html.dark-mode .alert-box,
+html.dark-mode .warning-box {
+  background: rgba(245,158,11,.14) !important;
+  color: #fde68a !important;
+  border: 1px solid rgba(245,158,11,.55) !important;
+}
+html.dark-mode .admin-only-notice i,
+html.dark-mode .staff-notice i,
+html.dark-mode .info-notice i,
+html.dark-mode .notice-box i,
+html.dark-mode .warning-box i { color:#fbbf24 !important; }
+html.dark-mode .admin-only-notice p,
+html.dark-mode .admin-only-notice span,
+html.dark-mode .staff-notice p,
+html.dark-mode .staff-notice span,
+html.dark-mode .info-notice p,
+html.dark-mode .info-notice span,
+html.dark-mode .notice-box p,
+html.dark-mode .notice-box span {
+  color:#fff7d6 !important;
+}
+html.dark-mode .restore-upload,
+html.dark-mode .upload-zone,
+html.dark-mode .drop-zone {
+  background: rgba(6,26,61,.35) !important;
+  color:#f8fbff !important;
+  border-color:rgba(219,234,254,.70) !important;
+}
+html.dark-mode .restore-upload i,
+html.dark-mode .upload-zone i,
+html.dark-mode .drop-zone i { color:#dbeafe !important; }
+
+html.dark-mode .action-card,
+html.dark-mode .backup-card,
+html.dark-mode .restore-card {
+  background: linear-gradient(145deg,#102b60,#0b2452) !important;
+  border-color: rgba(96,165,250,.35) !important;
+  color:#f8fbff !important;
+}
+html.dark-mode .action-card-icon,
+html.dark-mode .card-icon,
+html.dark-mode .hicon,
+html.dark-mode .section-icon,
+html.dark-mode .stat-icon {
+  color:#ffffff !important;
+  opacity: 1 !important;
+  filter:none !important;
+}
+html.dark-mode .action-card-icon.ic-blue { background:#3b82f6 !important; color:#fff !important; }
+html.dark-mode .action-card-icon.ic-green { background:#22c55e !important; color:#fff !important; }
+html.dark-mode .action-card-icon.ic-red { background:#ef4444 !important; color:#fff !important; }
+html.dark-mode .badge-backup { background: rgba(59,130,246,.22) !important; color:#bfdbfe !important; border-color:rgba(96,165,250,.70) !important; }
+html.dark-mode .badge-restore { background: rgba(22,163,74,.22) !important; color:#86efac !important; border-color:rgba(34,197,94,.70) !important; }
+html.dark-mode .size-chip { background: rgba(219,234,254,.18) !important; color:#e0f2fe !important; }
+
+html.dark-mode .section-card,
+html.dark-mode .table-card,
+html.dark-mode .chart-card,
+html.dark-mode .card,
+html.dark-mode .stat-card,
+html.dark-mode .filter-card,
+html.dark-mode .filter-bar,
+html.dark-mode .action-card,
+html.dark-mode .quick-card,
+html.dark-mode .qa-card,
+html.dark-mode .branch-queue-card {
+  background: linear-gradient(145deg,#0d2d65,#0a2554) !important;
+  color:#f8fbff !important;
+  border-color: rgba(96,165,250,.35) !important;
+}
+
+html.dark-mode .info-banner,
+html.dark-mode .archive-info,
+html.dark-mode .archive-notice,
+html.dark-mode .alert-info,
+html.dark-mode .page-note,
+html.dark-mode .notice-banner {
+  background: #123267 !important;
+  background-color: #123267 !important;
+  color: #eaf2ff !important;
+  border: 1px solid rgba(147,197,253,.50) !important;
+  box-shadow: none !important;
+}
+html.dark-mode .info-banner *,
+html.dark-mode .archive-info *,
+html.dark-mode .archive-notice *,
+html.dark-mode .alert-info *,
+html.dark-mode .page-note *,
+html.dark-mode .notice-banner * {
+  color: #eaf2ff !important;
+  opacity: 1 !important;
+}
+html.dark-mode .info-banner i,
+html.dark-mode .archive-info i,
+html.dark-mode .archive-notice i,
+html.dark-mode .alert-info i,
+html.dark-mode .page-note i,
+html.dark-mode .notice-banner i {
+  color: #93c5fd !important;
+}
+
+html.dark-mode .btn-export-csv,
+html.dark-mode .btn-print-report,
+html.dark-mode .btn-primary-sm,
+html.dark-mode button[onclick*="export"],
+html.dark-mode button[onclick*="print"] {
+  background: #2563eb !important;
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(147,197,253,.55) !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+html.dark-mode .btn-export-csv *,
+html.dark-mode .btn-print-report *,
+html.dark-mode .btn-primary-sm *,
+html.dark-mode button[onclick*="export"] *,
+html.dark-mode button[onclick*="print"] * {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+html.dark-mode .btn-export-csv:hover,
+html.dark-mode .btn-print-report:hover,
+html.dark-mode .btn-primary-sm:hover,
+html.dark-mode button[onclick*="export"]:hover,
+html.dark-mode button[onclick*="print"]:hover {
+  background: #1d4ed8 !important;
+  background-color: #1d4ed8 !important;
+}
+
+html.dark-mode .btn-delete,
+html.dark-mode .btn-red-sm,
+html.dark-mode .btn-danger-sm,
+html.dark-mode button[onclick*="delete"],
+html.dark-mode button[onclick*="Delete"] {
+  background: #dc2626 !important;
+  background-color: #dc2626 !important;
+  color: #ffffff !important;
+  border: 1px solid #f87171 !important;
+  opacity: 1 !important;
+}
+html.dark-mode .btn-delete *,
+html.dark-mode .btn-red-sm *,
+html.dark-mode .btn-danger-sm *,
+html.dark-mode button[onclick*="delete"] *,
+html.dark-mode button[onclick*="Delete"] * {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+html.dark-mode .progress-track,
+html.dark-mode .progress,
+html.dark-mode .progress-bar-wrap,
+html.dark-mode .bar-bg,
+html.dark-mode .svc-track,
+html.dark-mode .bh-track,
+html.dark-mode .peak-track,
+html.dark-mode .completeness-track,
+html.dark-mode td div[style*="height:6px"],
+html.dark-mode td div[style*="height: 6px"],
+html.dark-mode td div[style*="height:8px"],
+html.dark-mode td div[style*="height: 8px"] {
+  background: #071a3d !important;
+  background-color: #071a3d !important;
+  border: 1px solid rgba(226,232,240,.55) !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+html.dark-mode .progress-fill,
+html.dark-mode .progress-bar,
+html.dark-mode .progress-bar-fill,
+html.dark-mode .bar-fill,
+html.dark-mode .svc-fill,
+html.dark-mode .bh-fill,
+html.dark-mode .peak-fill,
+html.dark-mode .completeness-fill,
+html.dark-mode td div[style*="width:"][style*="background:#1e40af"],
+html.dark-mode td div[style*="width:"][style*="background: #1e40af"],
+html.dark-mode td div[style*="width:"][style*="background:#2563eb"],
+html.dark-mode td div[style*="width:"][style*="background: #2563eb"],
+html.dark-mode td div[style*="width:"][style*="background:#3b82f6"],
+html.dark-mode td div[style*="width:"][style*="background: #3b82f6"] {
+  background: #1e40af !important;
+  background-color: #1e40af !important;
+  border-right: 1px solid rgba(255,255,255,.55) !important;
+  box-shadow: none !important;
+}
+
+html.dark-mode .pat-avatar,
+html.dark-mode .pat-modal-avatar,
+html.dark-mode .patient-avatar,
+html.dark-mode .avatar,
+html.dark-mode .avatar-circle,
+html.dark-mode .initials,
+html.dark-mode .user-avatar,
+html.dark-mode .session-avatar {
+  background: #dbeafe !important;
+  color: #0b2d68 !important;
+  border: 2px solid rgba(147,197,253,.85) !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25) !important;
+  font-weight: 800 !important;
+}
+html.dark-mode .patient-cell,
+html.dark-mode .patient-cell *,
+html.dark-mode .user-info-cell,
+html.dark-mode .user-info-cell *,
+html.dark-mode .session-row,
+html.dark-mode .session-row *,
+html.dark-mode .active-session-row,
+html.dark-mode .active-session-row * {
+  opacity: 1 !important;
+}
+html.dark-mode .patient-cell strong,
+html.dark-mode .user-info-cell strong,
+html.dark-mode .session-row strong,
+html.dark-mode .active-session-row strong {
+  color: #ffffff !important;
+}
+
+html.dark-mode .b-senior,
+html.dark-mode .badge-senior {
+  background: rgba(245,158,11,.22) !important;
+  color: #fde68a !important;
+  border: 1px solid rgba(245,158,11,.75) !important;
+}
+html.dark-mode .b-pwd,
+html.dark-mode .badge-pwd {
+  background: rgba(59,130,246,.22) !important;
+  color: #bfdbfe !important;
+  border: 1px solid rgba(96,165,250,.75) !important;
+}
+html.dark-mode .b-4ps,
+html.dark-mode .badge-4ps {
+  background: rgba(168,85,247,.24) !important;
+  color: #e9d5ff !important;
+  border: 1px solid rgba(192,132,252,.75) !important;
+}
+html.dark-mode .b-philhealth,
+html.dark-mode .badge-active,
+html.dark-mode .b-active {
+  background: rgba(22,163,74,.22) !important;
+  color: #86efac !important;
+  border: 1px solid rgba(34,197,94,.75) !important;
+}
+html.dark-mode .b-inactive,
+html.dark-mode .badge-inactive {
+  background: rgba(239,68,68,.20) !important;
+  color: #fca5a5 !important;
+  border: 1px solid rgba(239,68,68,.70) !important;
+}
+html.dark-mode .b-none {
+  background: transparent !important;
+  color: #e2e8f0 !important;
+  border: 0 !important;
+}
+
+html.dark-mode canvas,
+html.dark-mode .chart-wrap,
+html.dark-mode .chart-card {
+  color: #eaf2ff !important;
+}
+
+html.dark-mode body,
+html.dark-mode .patient-page,
+html.dark-mode .main,
+html.dark-mode .main-content,
+html.dark-mode .content,
+html.dark-mode .page-content,
+html.dark-mode .container,
+html.dark-mode .dashboard-wrap,
+html.dark-mode .page-wrapper {
+  background: #061a38 !important;
+  color: #f8fbff !important;
+}
+
+html.dark-mode .card-box,
+html.dark-mode .action-card,
+html.dark-mode .queue-stat-box,
+html.dark-mode .appt-card,
+html.dark-mode .appointment-card,
+html.dark-mode .history-card,
+html.dark-mode .section-card,
+html.dark-mode .book-card,
+html.dark-mode .summary-box,
+html.dark-mode .q-card,
+html.dark-mode .q-card-header,
+html.dark-mode .q-card-body,
+html.dark-mode .notice-box,
+html.dark-mode .profile-header-card,
+html.dark-mode .profile-header-top,
+html.dark-mode .profile-header-bottom,
+html.dark-mode .tab-nav,
+html.dark-mode .tab-btn,
+html.dark-mode .rhu-card,
+html.dark-mode .ph-card,
+html.dark-mode .card-capture-panel,
+html.dark-mode .card-capture-head,
+html.dark-mode .card-preview-wrap,
+html.dark-mode .card-preview-empty,
+html.dark-mode .upload-area,
+html.dark-mode .preview-area,
+html.dark-mode .camera-area,
+html.dark-mode .ocr-box,
+html.dark-mode .form-section,
+html.dark-mode .form-card,
+html.dark-mode .info-box,
+html.dark-mode .empty-state,
+html.dark-mode .calendar,
+html.dark-mode .date-picker,
+html.dark-mode .datepicker,
+html.dark-mode .flatpickr-calendar,
+html.dark-mode .flatpickr-innerContainer,
+html.dark-mode .flatpickr-months,
+html.dark-mode .flatpickr-weekdays,
+html.dark-mode .flatpickr-days,
+html.dark-mode .dayContainer,
+html.dark-mode [class*="card"],
+html.dark-mode [class*="panel"],
+html.dark-mode [class*="box"] {
+  background: #10264d !important;
+  background-color: #10264d !important;
+  border-color: rgba(147,197,253,.35) !important;
+  color: #f8fbff !important;
+  box-shadow: none !important;
+}
+
+/* file upload */
+html.dark-mode .card-preview-empty,
+html.dark-mode .preview-empty,
+html.dark-mode .empty-upload,
+html.dark-mode .drop-zone,
+html.dark-mode .upload-placeholder,
+html.dark-mode .photo-placeholder,
+html.dark-mode .id-preview,
+html.dark-mode .card-preview-wrap,
+html.dark-mode .qr-code-box {
+  background: #0b1b36 !important;
+  background-color: #0b1b36 !important;
+  border: 1.5px dashed rgba(191,219,254,.55) !important;
+  color: #dbeafe !important;
+}
+
+html.dark-mode .card-box *,
+html.dark-mode .action-card *,
+html.dark-mode .queue-stat-box *,
+html.dark-mode .appointment-card *,
+html.dark-mode .appt-card *,
+html.dark-mode .history-card *,
+html.dark-mode .section-card *,
+html.dark-mode .book-card *,
+html.dark-mode .summary-box *,
+html.dark-mode .q-card *,
+html.dark-mode .profile-header-card *,
+html.dark-mode .tab-nav *,
+html.dark-mode .rhu-card *,
+html.dark-mode .ph-card *,
+html.dark-mode .card-capture-panel *,
+html.dark-mode .form-card *,
+html.dark-mode .empty-state *,
+html.dark-mode .notice-box *,
+html.dark-mode .upload-area *,
+html.dark-mode .preview-area *,
+html.dark-mode .card-preview-wrap *,
+html.dark-mode .card-preview-empty * {
+  color: #f8fbff !important;
+  opacity: 1 !important;
+}
+
+html.dark-mode small,
+html.dark-mode .muted,
+html.dark-mode .text-muted,
+html.dark-mode .subtext,
+html.dark-mode .helper-text,
+html.dark-mode .reminder-text,
+html.dark-mode .rhu-address,
+html.dark-mode .rhu-hours,
+html.dark-mode .ocr-status,
+html.dark-mode .progress-label,
+html.dark-mode .progress-meta {
+  color: #bfdbfe !important;
+  opacity: 1 !important;
+}
+
+html.dark-mode .info-notice,
+html.dark-mode .priority-notice,
+html.dark-mode .reminder-box,
+html.dark-mode .alert,
+html.dark-mode .alert-info,
+html.dark-mode .alert-warning,
+html.dark-mode .alert-success {
+  background: #243044 !important;
+  background-color: #243044 !important;
+  border: 1px solid rgba(245,158,11,.45) !important;
+  color: #fde68a !important;
+}
+html.dark-mode .info-notice *,
+html.dark-mode .priority-notice *,
+html.dark-mode .reminder-box *,
+html.dark-mode .alert *,
+html.dark-mode .alert-info *,
+html.dark-mode .alert-warning *,
+html.dark-mode .alert-success * {
+  color: #fde68a !important;
+  opacity: 1 !important;
+}
+
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea,
+html.dark-mode .form-control,
+html.dark-mode .form-select,
+html.dark-mode .time-slot,
+html.dark-mode .flatpickr-input,
+html.dark-mode .flatpickr-monthDropdown-months,
+html.dark-mode .numInput,
+html.dark-mode .cur-year {
+  background: #0a1e3d !important;
+  background-color: #0a1e3d !important;
+  color: #f8fbff !important;
+  border-color: rgba(147,197,253,.45) !important;
+  opacity: 1 !important;
+}
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: #93c5fd !important;
+  opacity: 1 !important;
+}
+html.dark-mode .flatpickr-calendar,
+html.dark-mode .flatpickr-calendar * {
+  color: #f8fbff !important;
+}
+html.dark-mode .flatpickr-day {
+  color: #dbeafe !important;
+  border-color: transparent !important;
+}
+html.dark-mode .flatpickr-day:hover,
+html.dark-mode .flatpickr-day.selected,
+html.dark-mode .flatpickr-day.startRange,
+html.dark-mode .flatpickr-day.endRange {
+  background: #1e40af !important;
+  color: #ffffff !important;
+}
+html.dark-mode .flatpickr-day.disabled,
+html.dark-mode .flatpickr-day.prevMonthDay,
+html.dark-mode .flatpickr-day.nextMonthDay {
+  color: #64748b !important;
+}
+
+html.dark-mode .progress,
+html.dark-mode .progress-track,
+html.dark-mode .progress-bar {
+  background: #07152c !important;
+  background-color: #07152c !important;
+  border: 1px solid rgba(255,255,255,.45) !important;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.55) !important;
+  height: 8px !important;
+  border-radius: 999px !important;
+  overflow: hidden !important;
+}
+html.dark-mode .progress-fill,
+html.dark-mode .progress-bar-fill,
+html.dark-mode .progress > div,
+html.dark-mode .progress-bar > div {
+  background: #1e3a8a !important;
+  background-color: #1e3a8a !important;
+  border-right: 1px solid rgba(255,255,255,.45) !important;
+  box-shadow: none !important;
+  border-radius: 999px !important;
+}
+
+html.dark-mode .center-tabs,
+html.dark-mode .center-tab {
+  background: #10264d !important;
+  border-color: rgba(147,197,253,.35) !important;
+  color: #eaf2ff !important;
+}
+html.dark-mode .center-tab.active,
+html.dark-mode .tab-btn.active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+html.dark-mode .card-capture-actions button,
+html.dark-mode .btn,
+html.dark-mode button {
+  border-color: rgba(147,197,253,.45) !important;
+  color: #f8fbff !important;
+}
+html.dark-mode button:disabled,
+html.dark-mode .btn:disabled,
+html.dark-mode .disabled {
+  background: #1e293b !important;
+  color: #cbd5e1 !important;
+  opacity: 1 !important;
+}
+
+html.dark-mode .badge-confirmed,
+html.dark-mode .detail-badge.confirmed,
+html.dark-mode .badge-active,
+html.dark-mode .live-badge {
+  background: rgba(22,163,74,.22) !important;
+  color: #86efac !important;
+  border: 1px solid rgba(34,197,94,.70) !important;
+}
+html.dark-mode .badge-completed,
+html.dark-mode .detail-badge.completed {
+  background: rgba(37,99,235,.22) !important;
+  color: #bfdbfe !important;
+  border: 1px solid rgba(96,165,250,.70) !important;
+}
+html.dark-mode .badge-cancelled,
+html.dark-mode .detail-badge.cancelled {
+  background: rgba(239,68,68,.20) !important;
+  color: #fca5a5 !important;
+  border: 1px solid rgba(248,113,113,.70) !important;
+}
+html.dark-mode .priority-badge,
+html.dark-mode .badge-senior,
+html.dark-mode .badge-mine {
+  background: rgba(245,158,11,.22) !important;
+  color: #fde68a !important;
+  border: 1px solid rgba(245,158,11,.70) !important;
+}
+
+html.dark-mode .rhu-name,
+html.dark-mode .card-capture-title,
+html.dark-mode .profile-header-name,
+html.dark-mode .ph-card strong,
+html.dark-mode .q-card-title,
+html.dark-mode .card-title {
+  color: #ffffff !important;
+}
+html.dark-mode .rhu-card i,
+html.dark-mode .card-title-icon,
+html.dark-mode .card-capture-title i,
+html.dark-mode .stat-icon,
+html.dark-mode .icon-box {
+  color: #dbeafe !important;
+  background: #2563eb !important;
+  border-color: rgba(147,197,253,.45) !important;
+}
+
+html.dark-mode .patient-content [style*="background:white"],
+html.dark-mode .patient-content [style*="background: white"],
+html.dark-mode .patient-content [style*="background:#fff"],
+html.dark-mode .patient-content [style*="background: #fff"],
+html.dark-mode .patient-content [style*="background:#f"],
+html.dark-mode .patient-content [style*="background: #f"] {
+  background: #10264d !important;
+  background-color: #10264d !important;
+  color: #f8fbff !important;
+  border-color: rgba(147,197,253,.35) !important;
+}
+
+html.dark-mode .patient-content,
+html.dark-mode .patient-content *:not(.fa):not(.fas):not(.far):not(.fab) {
+  text-shadow: none !important;
+}
+html.dark-mode .patient-content h1,
+html.dark-mode .patient-content h2,
+html.dark-mode .patient-content h3,
+html.dark-mode .patient-content h4,
+html.dark-mode .patient-content h5,
+html.dark-mode .patient-content h6,
+html.dark-mode .patient-content p,
+html.dark-mode .patient-content span,
+html.dark-mode .patient-content label,
+html.dark-mode .patient-content div {
+  opacity: 1 !important;
+}
+
+html.dark-mode .login-page,
+html.dark-mode .login-page body {
+  background: #ffffff !important;
+  color: #071a44 !important;
+}
+
+html.dark-mode .login-page .left-panel {
+  background: #dceeff url('patient/images/pulilanhospi2.png') 85% center/cover no-repeat !important;
+  color: #071a44 !important;
+}
+html.dark-mode .login-page .left-panel::before {
+  background: linear-gradient(90deg, rgba(239,247,255,.95) 0%, rgba(232,243,255,.82) 40%, rgba(222,238,255,.52) 68%, rgba(222,238,255,.22) 100%) !important;
+}
+html.dark-mode .login-page .left-panel::after {
+  background: linear-gradient(180deg, rgba(255,255,255,.04) 0%, rgba(255,255,255,.16) 46%, rgba(238,247,255,.40) 100%) !important;
+}
+html.dark-mode .login-page .left-panel .brand h1,
+html.dark-mode .login-page .left-panel .hero-copy h2,
+html.dark-mode .login-page .left-panel .benefit strong {
+  color: #061a45 !important;
+}
+html.dark-mode .login-page .left-panel .brand p,
+html.dark-mode .login-page .left-panel .hero-copy > p,
+html.dark-mode .login-page .left-panel .benefit span,
+html.dark-mode .login-page .left-panel .left-footer {
+  color: #233854 !important;
+}
+html.dark-mode .login-page .left-panel .hero-copy h2 span,
+html.dark-mode .login-page .left-panel .benefit-icon {
+  color: #1d5edb !important;
+}
+html.dark-mode .login-page .left-panel .blue-line {
+  background: #1d5edb !important;
+}
+html.dark-mode .login-page .left-panel .benefit-icon {
+  background: rgba(255,255,255,.82) !important;
+  box-shadow: 0 12px 25px rgba(30,64,175,.07) !important;
+}
+
+html.dark-mode .login-page .right-panel {
+  background: linear-gradient(180deg,#ffffff 0%,#fbfdff 100%) !important;
+}
+html.dark-mode .login-page .login-card,
+html.dark-mode .login-page .admin-login-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 25px 60px rgba(2,6,23,.28), 0 8px 24px rgba(2,6,23,.18) !important;
+  color: #f8fafc !important;
+}
+html.dark-mode .login-page .login-card h1,
+html.dark-mode .login-page .login-card h2,
+html.dark-mode .login-page .login-card h3,
+html.dark-mode .login-page .login-card h4,
+html.dark-mode .login-page .login-card h5,
+html.dark-mode .login-page .login-card p,
+html.dark-mode .login-page .login-card label,
+html.dark-mode .login-page .login-card .form-label,
+html.dark-mode .login-page .login-card .form-check-label,
+html.dark-mode .login-page .login-card .register-link,
+html.dark-mode .login-page .admin-login-card h1,
+html.dark-mode .login-page .admin-login-card h2,
+html.dark-mode .login-page .admin-login-card h3,
+html.dark-mode .login-page .admin-login-card h4,
+html.dark-mode .login-page .admin-login-card h5,
+html.dark-mode .login-page .admin-login-card p,
+html.dark-mode .login-page .admin-login-card label {
+  color: #f8fafc !important;
+}
+html.dark-mode .login-page .login-card .login-top p,
+html.dark-mode .login-page .login-card .divider,
+html.dark-mode .login-page .login-card .register-link,
+html.dark-mode .login-page .admin-login-card .login-subtitle,
+html.dark-mode .login-page .admin-login-card .muted,
+html.dark-mode .login-page .admin-login-card small {
+  color: #cbd5e1 !important;
+}
+html.dark-mode .login-page .login-card .user-icon,
+html.dark-mode .login-page .admin-login-card .user-icon,
+html.dark-mode .login-page .admin-login-card .login-icon {
+  background: #eaf2ff !important;
+  color: #1d5edb !important;
+}
+html.dark-mode .login-page .login-card .form-control,
+html.dark-mode .login-page .admin-login-card input,
+html.dark-mode .login-page .admin-login-card select,
+html.dark-mode .login-page .admin-login-card textarea {
+  background: #102247 !important;
+  color: #f8fafc !important;
+  border-color: #31558f !important;
+}
+html.dark-mode .login-page .login-card .form-control::placeholder,
+html.dark-mode .login-page .admin-login-card input::placeholder {
+  color: #93b4ee !important;
+}
+html.dark-mode .login-page .login-card .input-wrap i,
+html.dark-mode .login-page .admin-login-card .input-wrap i {
+  color: #9db6ef !important;
+}
+html.dark-mode .login-page .login-card .btn-google,
+html.dark-mode .login-page .admin-login-card .btn-google {
+  background: #ffffff !important;
+  color: #071a44 !important;
+  border-color: #d8dee8 !important;
+}
+html.dark-mode .login-page .login-card .divider::before,
+html.dark-mode .login-page .login-card .divider::after {
+  background: #64748b !important;
+}
+html.dark-mode .login-page .login-card .forgot-link,
+html.dark-mode .login-page .login-card .register-link a,
+html.dark-mode .login-page .admin-login-card a {
+  color: #93c5fd !important;
+}
+html.dark-mode .login-page .login-card .error-msg,
+html.dark-mode .login-page .admin-login-card .error-msg,
+html.dark-mode .login-page .login-card .alert-danger,
+html.dark-mode .login-page .admin-login-card .alert-danger {
+  display: block !important;
+  background: #3b1116 !important;
+  color: #fecaca !important;
+  border: 1px solid #ef4444 !important;
+}
+html.dark-mode .login-page .login-card .success-msg,
+html.dark-mode .login-page .admin-login-card .success-msg,
+html.dark-mode .login-page .login-card .alert-success,
+html.dark-mode .login-page .admin-login-card .alert-success {
+  display: block !important;
+  background: #052e1a !important;
+  color: #bbf7d0 !important;
+  border: 1px solid #22c55e !important;
+}
+
+html.dark-mode .admin-page {
+  background: #ffffff !important;
+}
+html.dark-mode .admin-page .right-panel {
+  background: linear-gradient(180deg,#ffffff 0%,#f8fbff 100%) !important;
+}
+html.dark-mode .admin-page .login-card {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+  box-shadow: 0 25px 60px rgba(2,6,23,.28), 0 8px 24px rgba(2,6,23,.18) !important;
+  color: #f8fafc !important;
+}
+html.dark-mode .admin-page .login-card h1,
+html.dark-mode .admin-page .login-card h2,
+html.dark-mode .admin-page .login-card h3,
+html.dark-mode .admin-page .login-card h4,
+html.dark-mode .admin-page .login-card h5,
+html.dark-mode .admin-page .login-card p,
+html.dark-mode .admin-page .login-card label,
+html.dark-mode .admin-page .login-card .form-label,
+html.dark-mode .admin-page .login-card .form-check-label {
+  color: #f8fafc !important;
+}
+html.dark-mode .admin-page .login-card .login-top p,
+html.dark-mode .admin-page .login-card small,
+html.dark-mode .admin-page .login-card .helper-text {
+  color: #cbd5e1 !important;
+}
+html.dark-mode .admin-page .login-card .admin-badge,
+html.dark-mode .admin-page .login-card .user-icon,
+html.dark-mode .admin-page .login-card .login-icon {
+  background: #eaf2ff !important;
+  color: #1d5edb !important;
+}
+html.dark-mode .admin-page .login-card .form-control,
+html.dark-mode .admin-page .login-card input,
+html.dark-mode .admin-page .login-card select,
+html.dark-mode .admin-page .login-card textarea {
+  background: #102247 !important;
+  color: #f8fafc !important;
+  border-color: #31558f !important;
+}
+html.dark-mode .admin-page .login-card .form-control::placeholder,
+html.dark-mode .admin-page .login-card input::placeholder {
+  color: #93b4ee !important;
+}
+html.dark-mode .admin-page .login-card .input-wrap i,
+html.dark-mode .admin-page .login-card .input-wrap .left,
+html.dark-mode .admin-page .login-card .input-wrap .eye {
+  color: #9db6ef !important;
+}
+html.dark-mode .admin-page .login-card a {
+  color: #93c5fd !important;
+}
+html.dark-mode .admin-page .login-card .error-box,
+html.dark-mode .admin-page .login-card .error-msg,
+html.dark-mode .admin-page .login-card .alert-danger {
+  background: #3b1116 !important;
+  color: #fecaca !important;
+  border-color: #ef4444 !important;
+}
+
+/* file upload */
+html.dark-mode .avatar,
+html.dark-mode .mob-avatar,
+html.dark-mode .profile-avatar-big,
+html.dark-mode .patient-avatar,
+html.dark-mode .user-avatar,
+html.dark-mode [class*='avatar'] {
+  background: #2f6df6 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,.55) !important;
+  box-shadow: 0 0 0 2px rgba(30,64,175,.20) !important;
+}
+html.dark-mode .card-capture-panel,
+html.dark-mode .benefit-capture-grid .card-capture-panel {
+  background: #132b56 !important;
+  border-color: #31558f !important;
+  color: #f8fafc !important;
+}
+html.dark-mode .card-capture-title,
+html.dark-mode .card-capture-panel h1,
+html.dark-mode .card-capture-panel h2,
+html.dark-mode .card-capture-panel h3,
+html.dark-mode .card-capture-panel h4,
+html.dark-mode .card-capture-panel h5,
+html.dark-mode .card-capture-panel label,
+html.dark-mode .card-capture-panel strong {
+  color: #f8fafc !important;
+}
+html.dark-mode .card-capture-copy,
+html.dark-mode .card-preview-empty,
+html.dark-mode .ocr-status,
+html.dark-mode .card-capture-panel p,
+html.dark-mode .card-capture-panel span {
+  color: #dbeafe !important;
+}
+html.dark-mode .card-capture-icon {
+  background: #2f6df6 !important;
+  color: #ffffff !important;
+}
+html.dark-mode .card-preview-wrap {
+  background: #0b1b37 !important;
+  border-color: #6b8fc7 !important;
+  color: #f8fafc !important;
+}
+html.dark-mode .btn-soft-blue,
+html.dark-mode .btn-soft-neutral {
+  background: #183866 !important;
+  color: #f8fafc !important;
+  border-color: #6b8fc7 !important;
+}
+html.dark-mode .btn-soft-blue i,
+html.dark-mode .btn-soft-neutral i {
+  color: #f8fafc !important;
+}
+html.dark-mode .btn-soft-blue:hover,
+html.dark-mode .btn-soft-neutral:hover {
+  background: #22477f !important;
+  border-color: #93c5fd !important;
+}
+
+html.dark-mode body:has(.login-page) {
+  background: #ffffff !important;
+}
+html.dark-mode .login-page,
+html.dark-mode .login-left,
+html.dark-mode .login-brand,
+html.dark-mode .login-title,
+html.dark-mode .login-desc,
+html.dark-mode .login-benefit,
+html.dark-mode .login-footer {
+  color: inherit !important;
+}
+html.dark-mode .login-left *:not(.login-card):not(.login-card *) {
+  color: inherit !important;
+}
+html.dark-mode .login-card {
+  background: #1f2937 !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+  box-shadow: 0 18px 45px rgba(0,0,0,.28) !important;
+}
+html.dark-mode .login-card h1,
+html.dark-mode .login-card h2,
+html.dark-mode .login-card h3,
+html.dark-mode .login-card label,
+html.dark-mode .login-card .form-label {
+  color: #f8fafc !important;
+}
+html.dark-mode .login-card p,
+html.dark-mode .login-card .divider,
+html.dark-mode .login-card .row-options,
+html.dark-mode .login-card .form-check-label {
+  color: #cbd5e1 !important;
+}
+html.dark-mode .login-card .form-control,
+html.dark-mode .login-card input,
+html.dark-mode .login-card select {
+  background: #0f2548 !important;
+  color: #f8fafc !important;
+  border-color: #315f9c !important;
+}
+html.dark-mode .login-card .form-control::placeholder,
+html.dark-mode .login-card input::placeholder {
+  color: #93b4e8 !important;
+}
+html.dark-mode .login-card .input-icon,
+html.dark-mode .login-card .eye,
+html.dark-mode .login-card i {
+  color: #93b4e8 !important;
+}
+html.dark-mode .login-card .btn-google {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-color: #d1d5db !important;
+}
+html.dark-mode .login-card #loginMessage {
+  position: static !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: 100% !important;
+  margin: 0 0 16px 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: none;
+  pointer-events: auto !important;
+}
+html.dark-mode .login-card #loginMessage.error-msg,
+html.dark-mode .login-card .error-msg {
+  background: #7f1d1d !important;
+  border: 1px solid #ef4444 !important;
+  color: #ffffff !important;
+  padding: 10px 12px !important;
+  border-radius: 7px !important;
+}
+html.dark-mode .login-card #loginMessage.success-msg,
+html.dark-mode .login-card .success-msg {
+  background: #064e3b !important;
+  border: 1px solid #10b981 !important;
+  color: #ffffff !important;
+  padding: 10px 12px !important;
+  border-radius: 7px !important;
+}
+
+html.dark-mode .ns-service,
+html.dark-mode .yq-ahead-pill {
+  background: #0f2548 !important;
+  color: #e5edff !important;
+  border: 1px solid #5b7fb8 !important;
+}
+html.dark-mode .ns-service i,
+html.dark-mode .yq-ahead-pill i {
+  color: #bfdbfe !important;
+}
+html.dark-mode .yq-empty-icon {
+  background: #0f2548 !important;
+  color: #bfdbfe !important;
+  border: 1px solid #5b7fb8 !important;
+}
+html.dark-mode .yq-empty h6,
+html.dark-mode .yq-empty p,
+html.dark-mode .q-card .empty-state,
+html.dark-mode .q-card .empty-state * {
+  color: #e5edff !important;
+}
+html.dark-mode .progress-track {
+  background: #0b1f3d !important;
+  border: 1px solid rgba(255,255,255,.55) !important;
+  height: 10px !important;
+}
+html.dark-mode .progress-fill {
+  background: #1e40af !important;
+  border-right: 1px solid #ffffff !important;
+}
+
+.qr-card-top::before,
+.qr-card-top::after {
+  display: none !important;
+  content: none !important;
+}
+
+html.dark-mode .qr-card,
+html.dark-mode .info-card {
+  background: #132b56 !important;
+  border-color: #31558f !important;
+  color: #f8fafc !important;
+  box-shadow: none !important;
+}
+
+html.dark-mode .qr-card-top {
+  background: #1d3f78 !important;
+  border-bottom: 1px solid #31558f !important;
+}
+
+html.dark-mode .qr-org-name,
+html.dark-mode .qr-title,
+html.dark-mode .qr-card h1,
+html.dark-mode .qr-card h2,
+html.dark-mode .qr-card h3,
+html.dark-mode .qr-card h4,
+html.dark-mode .qr-card h5,
+html.dark-mode .qr-card h6,
+html.dark-mode .qr-card strong,
+html.dark-mode .info-card h1,
+html.dark-mode .info-card h2,
+html.dark-mode .info-card h3,
+html.dark-mode .info-card h4,
+html.dark-mode .info-card h5,
+html.dark-mode .info-card h6,
+html.dark-mode .info-card strong,
+html.dark-mode .step-text strong {
+  color: #ffffff !important;
+}
+
+html.dark-mode .qr-details {
+  background: #0b1b37 !important;
+  border-color: #31558f !important;
+}
+
+html.dark-mode .qr-detail-row {
+  border-bottom-color: #254a7d !important;
+}
+
+html.dark-mode .qr-detail-icon,
+html.dark-mode .hicon {
+  background: #244f96 !important;
+  color: #dbeafe !important;
+  border: 1px solid #5b7fb8 !important;
+}
+
+html.dark-mode .qr-detail-label,
+html.dark-mode .qr-note,
+html.dark-mode .step-text span,
+html.dark-mode .info-card p,
+html.dark-mode .info-card span,
+html.dark-mode .info-card-body,
+html.dark-mode .info-card-body p,
+html.dark-mode .info-card-body span {
+  color: #dbeafe !important;
+}
+
+html.dark-mode .qr-detail-value {
+  color: #ffffff !important;
+}
+
+html.dark-mode .info-card-header {
+  background: #11264c !important;
+  border-bottom-color: #31558f !important;
+}
+
+html.dark-mode .info-card-body {
+  background: #132b56 !important;
+}
+
+html.dark-mode .reminder-box {
+  background: #2f2d22 !important;
+  border-color: #b7791f !important;
+  color: #fde68a !important;
+}
+
+html.dark-mode .reminder-box i,
+html.dark-mode .reminder-box strong {
+  color: #fde047 !important;
+}
+
+html.dark-mode .status-confirmed {
+  background: #064e3b !important;
+  color: #86efac !important;
+  border: 1px solid #10b981 !important;
+}
+
+html.dark-mode .qr-service-badge {
+  background: #0f2548 !important;
+  color: #dbeafe !important;
+  border: 1px solid #5b7fb8 !important;
+}
+
+html.dark-mode .qr-service-badge i,
+html.dark-mode .qr-note i {
+  color: #bfdbfe !important;
+}
+
+html.dark-mode .btn-outline-blue {
+  background: #0f2548 !important;
+  color: #f8fafc !important;
+  border-color: #6b8fc7 !important;
+}
+
+html.dark-mode .btn-outline-blue:hover {
+  background: #193b70 !important;
+}
+
+html.dark-mode .step-num {
+  background: #2f6df6 !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+}
+
+html.dark-mode .qr-code-wrap {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.dark-mode .login-page .left-panel,
+html.dark-mode .register-page .left-panel,
+html.dark-mode .admin-page .left-panel {
+  background: #dceeff url('patient/images/pulilanhospi2.png') 72% center/cover no-repeat !important;
+  color: #071a44 !important;
+}
+html.dark-mode .login-page .left-panel::before,
+html.dark-mode .register-page .left-panel::before,
+html.dark-mode .admin-page .left-panel::before {
+  display: block !important;
+  content: "" !important;
+  background: linear-gradient(90deg,rgba(239,247,255,.95) 0%,rgba(232,243,255,.82) 40%,rgba(222,238,255,.52) 68%,rgba(222,238,255,.22) 100%) !important;
+}
+html.dark-mode .login-page .left-panel::after,
+html.dark-mode .register-page .left-panel::after,
+html.dark-mode .admin-page .left-panel::after {
+  display: block !important;
+  content: "" !important;
+  background: linear-gradient(180deg,rgba(255,255,255,.04) 0%,rgba(255,255,255,.16) 46%,rgba(238,247,255,.40) 100%) !important;
+}
+html.dark-mode .login-page .left-panel .brand h1,
+html.dark-mode .register-page .left-panel .brand h1,
+html.dark-mode .admin-page .left-panel .brand h1,
+html.dark-mode .login-page .left-panel .hero-copy h2,
+html.dark-mode .register-page .left-panel .hero-copy h2,
+html.dark-mode .admin-page .left-panel .hero-copy h2,
+html.dark-mode .login-page .left-panel .benefit strong,
+html.dark-mode .register-page .left-panel .benefit strong,
+html.dark-mode .admin-page .left-panel .feature strong {
+  color: #071a44 !important;
+}
+html.dark-mode .login-page .left-panel .brand p,
+html.dark-mode .register-page .left-panel .brand p,
+html.dark-mode .admin-page .left-panel .brand p,
+html.dark-mode .login-page .left-panel .hero-copy > p,
+html.dark-mode .register-page .left-panel .hero-copy > p,
+html.dark-mode .admin-page .left-panel .hero-copy > p,
+html.dark-mode .login-page .left-panel .benefit span,
+html.dark-mode .register-page .left-panel .benefit span,
+html.dark-mode .admin-page .left-panel .feature span,
+html.dark-mode .login-page .left-panel .left-footer,
+html.dark-mode .register-page .left-panel .left-footer,
+html.dark-mode .admin-page .left-panel .left-footer {
+  color: #365173 !important;
+}
+html.dark-mode .login-page .left-panel .hero-copy h2 span,
+html.dark-mode .register-page .left-panel .hero-copy h2 span,
+html.dark-mode .admin-page .left-panel .hero-copy h2 span {
+  color: #1e40af !important;
+}
+html.dark-mode .login-page .left-panel .blue-line,
+html.dark-mode .register-page .left-panel .blue-line,
+html.dark-mode .admin-page .left-panel .blue-line {
+  background: #1e40af !important;
+}
+html.dark-mode .login-page .left-panel .benefit-icon,
+html.dark-mode .register-page .left-panel .benefit-icon,
+html.dark-mode .admin-page .left-panel .feature-icon,
+html.dark-mode .admin-page .left-panel .admin-icon {
+  background: #ffffff !important;
+  color: #1e40af !important;
+  border: 1px solid #dbeafe !important;
+}
+
+html.dark-mode .login-page .right-panel,
+html.dark-mode .register-page .right-panel,
+html.dark-mode .admin-page .right-panel {
+  background: #0f172a !important;
+}
+html.dark-mode .login-page .login-card,
+html.dark-mode .register-page .register-card,
+html.dark-mode .admin-page .login-card,
+html.dark-mode .admin-page .admin-login-card {
+  background: #1e293b !important;
+  border: 1px solid #334155 !important;
+  color: #f8fafc !important;
+  box-shadow: 0 18px 45px rgba(0,0,0,.28) !important;
+}
+html.dark-mode .register-page .register-card h1,
+html.dark-mode .register-page .register-card h2,
+html.dark-mode .register-page .register-card h3,
+html.dark-mode .register-page .register-card h4,
+html.dark-mode .register-page .register-card h5,
+html.dark-mode .register-page .register-card h6,
+html.dark-mode .register-page .register-card label,
+html.dark-mode .register-page .register-card strong,
+html.dark-mode .login-page .login-card h1,
+html.dark-mode .login-page .login-card h2,
+html.dark-mode .login-page .login-card h3,
+html.dark-mode .login-page .login-card h4,
+html.dark-mode .login-page .login-card h5,
+html.dark-mode .login-page .login-card h6,
+html.dark-mode .login-page .login-card label,
+html.dark-mode .login-page .login-card strong,
+html.dark-mode .admin-page .login-card h1,
+html.dark-mode .admin-page .login-card h2,
+html.dark-mode .admin-page .login-card h3,
+html.dark-mode .admin-page .login-card h4,
+html.dark-mode .admin-page .login-card h5,
+html.dark-mode .admin-page .login-card h6,
+html.dark-mode .admin-page .login-card label,
+html.dark-mode .admin-page .login-card strong {
+  color: #ffffff !important;
+}
+html.dark-mode .register-page .register-card p,
+html.dark-mode .register-page .register-card span,
+html.dark-mode .register-page .register-card small,
+html.dark-mode .register-page .register-card .helper,
+html.dark-mode .register-page .register-card .form-text,
+html.dark-mode .login-page .login-card p,
+html.dark-mode .login-page .login-card span,
+html.dark-mode .login-page .login-card small,
+html.dark-mode .admin-page .login-card p,
+html.dark-mode .admin-page .login-card span,
+html.dark-mode .admin-page .login-card small {
+  color: #cbd5e1 !important;
+}
+html.dark-mode .register-page .register-card input,
+html.dark-mode .register-page .register-card select,
+html.dark-mode .register-page .register-card textarea,
+html.dark-mode .login-page .login-card input,
+html.dark-mode .login-page .login-card select,
+html.dark-mode .login-page .login-card textarea,
+html.dark-mode .admin-page .login-card input,
+html.dark-mode .admin-page .login-card select,
+html.dark-mode .admin-page .login-card textarea {
+  background: #0f172a !important;
+  border-color: #475569 !important;
+  color: #f8fafc !important;
+}
+html.dark-mode .register-page .register-card input::placeholder,
+html.dark-mode .register-page .register-card textarea::placeholder,
+html.dark-mode .login-page .login-card input::placeholder,
+html.dark-mode .admin-page .login-card input::placeholder {
+  color: #94a3b8 !important;
+}
+html.dark-mode .register-page .register-card .input-wrap i,
+html.dark-mode .login-page .login-card .input-wrap i,
+html.dark-mode .admin-page .login-card .input-wrap i {
+  color: #93c5fd !important;
+}
+html.dark-mode .register-page .register-card .user-icon,
+html.dark-mode .login-page .login-card .user-icon,
+html.dark-mode .admin-page .login-card .admin-badge,
+html.dark-mode .admin-page .login-card .login-icon {
+  background: #1e40af !important;
+  color: #ffffff !important;
+  border: 1px solid #60a5fa !important;
+}
+html.dark-mode .register-page .register-card a,
+html.dark-mode .login-page .login-card a,
+html.dark-mode .admin-page .login-card a {
+  color: #93c5fd !important;
+}
+
+html.dark-mode .btn-refresh,
+html.dark-mode #refreshBtn {
+  background: #0f2548 !important;
+  color: #f8fafc !important;
+  border: 1.5px solid #64748b !important;
+  box-shadow: none !important;
+}
+html.dark-mode .btn-refresh i,
+html.dark-mode #refreshBtn i {
+  color: #bfdbfe !important;
+}
+html.dark-mode .btn-refresh:hover,
+html.dark-mode #refreshBtn:hover {
+  background: #193b70 !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.dark-mode .your-queue-card,
+html.dark-mode .now-serving-card,
+html.dark-mode .q-card,
+html.dark-mode .queue-card,
+html.dark-mode .queue-item,
+html.dark-mode .queue-row,
+html.dark-mode .center-tabs,
+html.dark-mode .notice-box {
+  background: #132b56 !important;
+  border-color: #31558f !important;
+  color: #f8fafc !important;
+}
+html.dark-mode .your-queue-card *,
+html.dark-mode .now-serving-card *,
+html.dark-mode .q-card *,
+html.dark-mode .queue-card *,
+html.dark-mode .queue-item *,
+html.dark-mode .queue-row *,
+html.dark-mode .notice-box * {
+  color: inherit;
+}
+html.dark-mode .q-card h1,
+html.dark-mode .q-card h2,
+html.dark-mode .q-card h3,
+html.dark-mode .q-card h4,
+html.dark-mode .q-card h5,
+html.dark-mode .q-card h6,
+html.dark-mode .your-queue-card h1,
+html.dark-mode .your-queue-card h2,
+html.dark-mode .your-queue-card h3,
+html.dark-mode .your-queue-card h4,
+html.dark-mode .your-queue-card h5,
+html.dark-mode .your-queue-card h6,
+html.dark-mode .now-serving-card h1,
+html.dark-mode .now-serving-card h2,
+html.dark-mode .now-serving-card h3,
+html.dark-mode .now-serving-card h4,
+html.dark-mode .now-serving-card h5,
+html.dark-mode .now-serving-card h6,
+html.dark-mode .queue-item strong,
+html.dark-mode .queue-row strong,
+html.dark-mode .patient-name,
+html.dark-mode .patient-fullname,
+html.dark-mode .p-name,
+html.dark-mode .q-name,
+html.dark-mode .yq-number,
+html.dark-mode .ns-number {
+  color: #ffffff !important;
+}
+html.dark-mode .q-card p,
+html.dark-mode .q-card span,
+html.dark-mode .your-queue-card p,
+html.dark-mode .your-queue-card span,
+html.dark-mode .now-serving-card p,
+html.dark-mode .now-serving-card span,
+html.dark-mode .queue-item p,
+html.dark-mode .queue-item span,
+html.dark-mode .queue-row p,
+html.dark-mode .queue-row span,
+html.dark-mode .q-sub,
+html.dark-mode .muted,
+html.dark-mode .text-muted {
+  color: #dbeafe !important;
+}
+html.dark-mode .patient-avatar,
+html.dark-mode .patient-icon,
+html.dark-mode .avatar-circle,
+html.dark-mode .queue-avatar,
+html.dark-mode .q-icon,
+html.dark-mode .q-type-icon,
+html.dark-mode .card-icon {
+  background: #1e40af !important;
+  color: #ffffff !important;
+  border: 1px solid #93c5fd !important;
+}
+html.dark-mode .patient-avatar i,
+html.dark-mode .patient-icon i,
+html.dark-mode .avatar-circle i,
+html.dark-mode .queue-avatar i,
+html.dark-mode .q-icon i,
+html.dark-mode .q-type-icon i,
+html.dark-mode .card-icon i {
+  color: #ffffff !important;
+}
+
+html.dark-mode body,
+html.dark-mode .page-container,
+html.dark-mode .dashboard,
+html.dark-mode main{
+  background:#061b3a !important;
+  color:#f8fafc !important;
+}
+
+html.dark-mode .navbar,
+html.dark-mode nav{
+  background:#0b2f6b !important;
+  border-bottom:2px solid rgba(96,165,250,.35) !important;
+}
+
+html.dark-mode .card-box,
+html.dark-mode .section-card,
+html.dark-mode .stat-card,
+html.dark-mode .action-card,
+html.dark-mode .queue-stat-box,
+html.dark-mode .book-card,
+html.dark-mode .appt-item,
+html.dark-mode .q-card,
+html.dark-mode .queue-card,
+html.dark-mode .yq-card,
+html.dark-mode .summary-card{
+  background:#102f63 !important;
+  border:1px solid rgba(147,197,253,.35) !important;
+  color:#ffffff !important;
+}
+
+html.dark-mode .right-panel,
+html.dark-mode .login-card{
+  background:#112a55 !important;
+  color:#ffffff !important;
+}
+
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea,
+html.dark-mode .form-control{
+  background:#082145 !important;
+  color:#ffffff !important;
+  border:1px solid rgba(147,197,253,.45) !important;
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder{
+  color:#93c5fd !important;
+}
+
+html.dark-mode .btn-main,
+html.dark-mode .btn-login,
+html.dark-mode .btn-book-new,
+html.dark-mode .menu a.active{
+  background:#2563eb !important;
+  color:#ffffff !important;
+}
+
+html.dark-mode .progress-bar{
+  background:#082145 !important;
+  border:1px solid rgba(147,197,253,.55) !important;
+}
+html.dark-mode .progress-fill{
+  background:#60a5fa !important;
+}
+html.dark-mode small,
+html.dark-mode p,
+html.dark-mode .text-muted{
+  color:#dbeafe !important;
+}
+
+html.dark-mode body{
+  background:#071a33 !important;
+  color:#f8fafc !important;
+}
+
+html.dark-mode .navbar,
+html.dark-mode nav{
+  background:#0b2a5b !important;
+  border-bottom:2px solid #1e40af !important;
+}
+
+html.dark-mode .menu a{
+  color:#dbeafe !important;
+}
+
+html.dark-mode .menu a.active{
+  background:#2563eb !important;
+  color:#ffffff !important;
+}
+
+html.dark-mode .book-card,
+html.dark-mode .section-card,
+html.dark-mode .stat-card,
+html.dark-mode .appt-item,
+html.dark-mode .queue-card,
+html.dark-mode .card,
+html.dark-mode .dashboard-card,
+html.dark-mode .notification-card,
+html.dark-mode .action-card{
+  background:#102b55 !important;
+  color:#f8fafc !important;
+  border:1px solid rgba(147,197,253,.28) !important;
+  box-shadow:0 8px 24px rgba(0,0,0,.22) !important;
+}
+
+html.dark-mode .page-header h2,
+html.dark-mode .book-title,
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6,
+html.dark-mode strong,
+html.dark-mode label{
+  color:#ffffff !important;
+}
+
+html.dark-mode .page-header p,
+html.dark-mode .book-sub,
+html.dark-mode small,
+html.dark-mode .stat-label,
+html.dark-mode .appt-service,
+html.dark-mode .section-header p{
+  color:#bfdbfe !important;
+}
+
+html.dark-mode input,
+html.dark-mode select,
+html.dark-mode textarea,
+html.dark-mode .form-control{
+  background:#071f42 !important;
+  color:#ffffff !important;
+  border:1px solid rgba(147,197,253,.35) !important;
+}
+
+html.dark-mode input::placeholder{
+  color:#93c5fd !important;
+}
+
+html.dark-mode .time-slot{
+  background:#071f42 !important;
+  color:#ffffff !important;
+  border:1px solid rgba(147,197,253,.35) !important;
+}
+
+html.dark-mode .time-slot.active{
+  background:#2563eb !important;
+  color:#ffffff !important;
+  border-color:#2563eb !important;
+}
+
+html.dark-mode .time-slot.disabled{
+  background:#0f172a !important;
+  color:#64748b !important;
+}
+
+html.dark-mode .btn-main,
+html.dark-mode .btn-dark-blue,
+html.dark-mode .btn-primary{
+  background:#2563eb !important;
+  color:#ffffff !important;
+}
+
+html.dark-mode .reminder-box{
+  background:#0b2a5b !important;
+  border-color:#3b82f6 !important;
+}
+
+html.dark-mode .progress,
+html.dark-mode .queue-progress{
+  background:#0f172a !important;
+}
+
+html.dark-mode .progress-bar{
+  background:#3b82f6 !important;
+}
+

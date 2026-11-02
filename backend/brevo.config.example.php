@@ -1,0 +1,5 @@
+<?php
+// config setup
+
+putenv('BREVO_API_KEY=REPLACE_WITH_NEW_BREVO_API_KEY');
+putenv('BREVO_SMS_SENDER=PULILANHC');

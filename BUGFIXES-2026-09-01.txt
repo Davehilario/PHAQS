@@ -1,0 +1,28 @@
+PHAQS bug fixes - 2026-09-01
+
+Patient
+- Recommended-branch info button remains a true circle on mobile.
+- Recommendation explanation opens beside the info button instead of at the bottom of the screen.
+- My Appointments primary UI changed to the same dark navy blue used by PHAQS.
+- Profile photo/profile JSON is preserved when saving another profile section.
+- PhilHealth and Benefits Camera buttons no longer silently fall back to a file picker when camera permission fails; Upload remains a separate action.
+- Change Password now enforces the same 8-character minimum as account creation and actually verifies/updates the password.
+- Dashboard announcements show a concise preview with Read more / Show less for long text.
+- Notifications now distinguish Appointments from Announcements; announcements no longer appear under the Appointments filter.
+
+Admin / RHU
+- Queue Management preserves the selected RHU during automatic refreshes instead of jumping back to another branch.
+- TV Queue Display announces newly called numbers with a female-preferred English system voice when Sound is enabled; it also announces the current call when sound is turned on.
+- Disease Case edit/update now returns to Heatmap & Analytics after a successful update, matching the add/save flow.
+- Audit Trail Login module filter now maps to Authentication records correctly.
+- Audit Trail waits for the real admin session before deciding permissions; RHU staff can retrieve their own audit entries while System Administrators can retrieve all entries.
+- RHU staff can create/edit/delete announcements for their own assigned RHU. All-branches/public announcements remain System Administrator-only.
+- Announcement priority, target barangay, publish time, and expiration time are now saved in the database.
+- Patient announcement visibility respects branch, barangay, publish time, and expiration time.
+
+Validation
+- PHP syntax check passed for backend/api.php.
+- Modified standalone JS files passed node --check.
+- Modified inline scripts in admin queue, announcements, audit trail, disease cases, and TV display passed node --check.
+- Existing final_static_test.py: 78 PASSED, 0 FAILED.
+- static-readiness.mjs could not complete because backend/config.php is intentionally/not present in the supplied ZIP.

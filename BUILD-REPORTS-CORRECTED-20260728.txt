@@ -1,0 +1,12 @@
+Reports corrections completed:
+- Renamed barangay summary to Patients by Home Barangay with clear explanation.
+- Changed Queue # to Reference Number.
+- Rebuilt Queue Summary per Branch from one filtered appointment dataset.
+- Added Total Queue Entries, Waiting, Serving, Completed, Cancelled/No-show.
+- Completion rate now uses Completed / Total Queue Entries.
+- Replaced undefined +100% comparison with New activity when prior period is zero.
+- Average wait displays an em dash when valid timestamps are unavailable.
+- Standardized Done labels to Completed.
+- Service chart now uses every service found in the selected report data instead of a fixed list.
+- Branch chart matching is normalized for reliable RHU labels.
+- Static test result: 78 passed, 0 failed.

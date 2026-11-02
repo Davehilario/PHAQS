@@ -1,0 +1,35 @@
+PULILAN HEALTH CENTER — LIVE WORKFLOW & RESPONSIVE FINAL
+Build date: July 27, 2026
+
+PRIMARY DEMO FLOW
+- Patient booking now creates a Pending appointment reference.
+- RHU staff approval sends an exact appointment notification.
+- Manual or QR arrival creates the live A-/P- queue number.
+- Queue call, completion, reports, notifications, and audit logs share the same appointment record.
+- Emergency walk-ins require a presenting reason and receive an E- queue number ahead of priority and regular patients.
+
+OPERATIONS
+- Daily RHU and per-service/slot capacity.
+- Clinic hours, unavailable dates, holidays, partial closures, and emergency closures remain connected to booking.
+- Reports now include completed appointments, no-show rate, average wait, emergency cases, completion rate, busiest RHU/service, barangay totals, and previous-period comparison.
+- Printable daily operations sheet, privacy-safe TV display, three-patients-away alerts, and announcement reach details.
+- Patient Archive now lists archived patient accounts beside finished appointments, records the archive timestamp, and restores the correct record type.
+- Admin/Staff bell now shows live, branch-aware booking and workflow activity with patient names, exact destinations, unread counts, and compact top-aligned spacing.
+- Disease warning uses verified cases only, documents the baseline rules, includes record source/staff timestamp, and excludes patient names from heatmap output.
+- Notification deduplication and exact destinations for appointments, queue, inquiries, announcements, and closures.
+- Specific audit details plus user, module, action, branch, and date filters.
+
+ADMIN / STAFF RESPONSIVE FIX
+- Final responsive layer applies only to authenticated Admin and RHU Staff pages.
+- Patient Record and other long modals stay within the viewport; header/footer remain visible and the body scrolls.
+- Mobile Reports cards, filters, charts, tables, queue forms, Operations forms, and modal buttons stack without horizontal clipping.
+- Browser confirmation dialogs are replaced with the shared in-app confirmation modal; alerts render as toasts.
+
+DATABASE UPDATE
+- Existing installations should import backend/live_workflow_migration.sql once.
+- Fresh installations can use backend/database.sql.
+
+VERIFICATION
+- tests/live-workflow-regression.mjs: 25/25 passed.
+- All 9 backend PHP files parsed successfully.
+- Static readiness: local references, duplicate IDs, responsive viewport declarations, and JavaScript parsing passed.

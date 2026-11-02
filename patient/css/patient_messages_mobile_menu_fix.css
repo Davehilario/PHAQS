@@ -1,0 +1,37 @@
+/* Keep the Help Center mobile navigation identical to My Appointments. */
+@media (max-width:1100px){
+  html body > nav.patient-navbar .mobile-menu,
+  html body > nav.patient-navbar .mobile-menu.show{
+    position:absolute !important;
+    top:calc(100% + 10px) !important;
+    right:8px !important;
+    left:auto !important;
+    width:min(360px,calc(100vw - 32px)) !important;
+    max-width:360px !important;
+    max-height:calc(100dvh - 100px) !important;
+    margin:0 !important;
+    padding:14px !important;
+    border:1px solid #dbe5f4 !important;
+    border-radius:14px !important;
+    background:#fff !important;
+    box-shadow:0 18px 45px rgba(15,23,42,.16) !important;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+    z-index:10050 !important;
+  }
+
+  html body > nav.patient-navbar .mobile-menu.show{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:6px !important;
+  }
+}
+
+@media (max-width:560px){
+  html body > nav.patient-navbar .mobile-menu,
+  html body > nav.patient-navbar .mobile-menu.show{
+    right:8px !important;
+    left:auto !important;
+    width:min(360px,calc(100vw - 32px)) !important;
+  }
+}

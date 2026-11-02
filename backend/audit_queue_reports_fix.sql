@@ -1,0 +1,13 @@
+USE health_center_system;
+CREATE TABLE IF NOT EXISTS audit_logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_type VARCHAR(30) NOT NULL DEFAULT 'admin',
+  user_name VARCHAR(150) NOT NULL DEFAULT 'Administrator',
+  email VARCHAR(150) NULL,
+  role VARCHAR(100) NULL,
+  branch VARCHAR(150) NULL,
+  module VARCHAR(100) NULL,
+  action VARCHAR(150) NOT NULL DEFAULT 'Action',
+  details TEXT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

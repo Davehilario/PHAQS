@@ -1,0 +1,1 @@
+Archive changed to restore-only. Permanent Delete buttons and modal were removed, archive retention guidance was updated, and the backend permanent-delete action now returns HTTP 403.

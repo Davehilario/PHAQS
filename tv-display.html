@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="assets/js/phaqs-feedback.js?v=20260730-alert-ui-v1"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Live Queue TV Display | Pulilan Health Center</title>
+  <link rel="icon" href="admin/images/mhc-logo.png">
+  <link rel="stylesheet" href="assets/css/deployment-polish.css?v=20260811-inter-lock-v4">
+  <style>
+    :root{--navy:#082958;--blue:#60a5fa;--green:#22c55e;--amber:#fbbf24;--red:#f87171;--muted:#a8bad2;--panel:#173e70;--panel-deep:#102f5c;--border:rgba(255,255,255,.14)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{overflow:hidden;color:#fff;background:#06182f;font-family:'Inter',"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    button,select{font:inherit}
+    .screen{height:100%;display:grid;grid-template-rows:auto 1fr auto;background:#0b3064}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:17px 30px;border-bottom:1px solid var(--border);background:#071f42}
+    .brand{display:flex;align-items:center;gap:14px;min-width:0}.brand img{width:54px;height:54px;border-radius:50%;object-fit:cover;background:#fff;border:3px solid #fff}.brand h1{font-size:22px;line-height:1.15;margin:0 0 5px;letter-spacing:.01em}.brand p{font-size:11px;color:#bcd0e9;margin:0;letter-spacing:.12em;text-transform:uppercase}
+    .controls{display:flex;align-items:center;justify-content:flex-end;gap:9px}.control-label{font-size:10px;font-weight:800;color:#a9bfd9;text-transform:uppercase;letter-spacing:.1em}.controls select,.control-btn{height:40px;border:1px solid rgba(255,255,255,.22);border-radius:7px;color:#fff;background:#16467f;padding:0 12px;outline:none}.controls select{min-width:205px}.controls select option{background:#fff;color:#10213f}.control-btn{cursor:pointer;font-size:12px;font-weight:750;display:inline-flex;align-items:center;gap:7px}.control-btn:hover{background:#205795}.connection{display:inline-flex;align-items:center;gap:7px;font-size:11px;color:#bed0e5;white-space:nowrap}.connection-dot{width:8px;height:8px;border-radius:50%;background:#94a3b8}.connection.online .connection-dot{background:var(--green);box-shadow:0 0 0 5px rgba(34,197,94,.12)}.connection.offline{color:#fecaca}.connection.offline .connection-dot{background:var(--red)}
+    .content{min-height:0;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(340px,.75fr);gap:18px;padding:20px 30px}.now-card,.side-card{border:1px solid var(--border);background:var(--panel);border-radius:12px;box-shadow:0 10px 28px rgba(2,12,30,.12)}
+    .now-card{min-height:0;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:82px 42px 42px;overflow:hidden}.now-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:#60a5fa}.now-card.priority:before{background:var(--amber)}.now-card.emergency:before{background:var(--red)}.now-meta{position:absolute;top:0;left:6px;right:0;min-height:55px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(255,255,255,.1);background:rgba(3,20,45,.16)}.current-branch{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:700;color:#eef6ff}.current-branch i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(34,197,94,.12)}.refresh-note{font-size:10px;color:#a8bad2;text-transform:uppercase;letter-spacing:.1em}.now-content{position:relative;z-index:1;width:100%;max-width:980px}.eyebrow{font-size:15px;font-weight:800;color:#b7cae2;text-transform:uppercase;letter-spacing:.22em;margin-bottom:24px}.queue-number{font-size:clamp(120px,18vw,250px);font-weight:800;line-height:.82;letter-spacing:-.055em;color:#72b3ff;text-shadow:0 12px 32px rgba(0,0,0,.18);padding-right:.06em}.now-card.is-empty .now-content{max-width:760px}.now-card.is-empty .queue-number{font-size:64px;color:#74a9e7;line-height:1;margin:6px 0}.queue-number.priority{color:var(--amber)}.queue-number.emergency{color:#ff7d7d}.service{font-size:clamp(22px,2.2vw,34px);font-weight:700;margin-top:28px;color:#fff}.now-card.is-empty .service{margin-top:12px}.lane{display:inline-flex;align-items:center;justify-content:center;margin-top:16px;padding:8px 16px;border:1px solid rgba(96,165,250,.48);border-radius:999px;background:rgba(59,130,246,.14);font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#c4ddff}.lane.priority{border-color:rgba(251,191,36,.52);background:rgba(251,191,36,.13);color:#fde68a}.lane.emergency{border-color:rgba(248,113,113,.58);background:rgba(239,68,68,.16);color:#fecaca}.call-instruction{margin:16px auto 0;max-width:560px;color:#b7cae2;font-size:12px;line-height:1.5}.empty-guide{display:none;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:25px;text-align:left}.now-card.is-empty .empty-guide{display:grid}.empty-guide div{min-height:66px;padding:12px;border:1px solid rgba(255,255,255,.1);border-radius:8px;background:#143866}.empty-guide b{width:25px;height:25px;margin-right:7px;border-radius:6px;background:#25558d;color:#dcecff;display:inline-grid;place-items:center;font-size:11px}.empty-guide span{color:#d8e6f7;font-size:11px;font-weight:600}.empty-guide small{display:block;margin:6px 0 0 32px;color:#9fb4cd;font-size:9px;line-height:1.4}.call-flash{animation:callFlash 1.2s ease}@keyframes callFlash{0%,100%{transform:scale(1)}35%{transform:scale(1.018);filter:brightness(1.25)}}
+    .side{min-height:0;display:grid;grid-template-rows:auto 1fr;gap:18px}.side-card{padding:20px;min-height:0}.side-title{font-size:11px;font-weight:850;color:#aec3dd;letter-spacing:.14em;text-transform:uppercase;margin:0 0 17px}.next-row{display:flex;align-items:center;gap:16px;padding:2px 0 5px}.next-number{min-width:72px;font-size:52px;font-weight:850;line-height:1;color:#fff;letter-spacing:-.04em}.next-details{min-width:0}.next-details strong{display:block;font-size:15px;color:#eef5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.next-details span{display:block;margin-top:6px;font-size:10px;color:#a9bdd5;text-transform:uppercase;letter-spacing:.08em}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;padding-top:17px;border-top:1px solid var(--border)}.stat{padding:12px;border-radius:8px;background:var(--panel-deep);border:1px solid rgba(255,255,255,.06)}.stat span{display:block;font-size:9px;color:#a9bdd5;text-transform:uppercase;letter-spacing:.08em}.stat strong{display:block;font-size:24px;margin-top:5px}.waiting-card{display:flex;flex-direction:column;overflow:hidden}.waiting-list{min-height:0;overflow:hidden;display:grid;align-content:start;gap:8px}.wait-item{display:grid;grid-template-columns:82px 1fr auto;align-items:center;gap:11px;padding:12px 13px;border:1px solid rgba(255,255,255,.09);border-radius:8px;background:var(--panel-deep)}.wait-item strong{font-size:18px;color:#eef6ff}.wait-item span{font-size:12px;color:#c1d0e2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.wait-item em{font-style:normal;font-size:9px;font-weight:850;letter-spacing:.06em;text-transform:uppercase;color:#93c5fd}.wait-item em.priority{color:#fde68a}.wait-item em.emergency{color:#fecaca}.empty{display:grid;place-items:center;min-height:150px;text-align:center;color:#a9bdd5;font-size:13px;line-height:1.6;padding:22px}
+    .footer{min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 30px;border-top:1px solid var(--border);background:#071f42}.privacy{font-size:11px;color:#a9bdd5}.privacy strong{color:#d8e6f7}.clock{text-align:right}.clock strong{display:block;font-size:21px;letter-spacing:.04em}.clock span{display:block;font-size:9px;color:#a9bdd5;margin-top:3px;text-transform:uppercase;letter-spacing:.09em}
+    @media(max-width:900px){body{overflow:auto}.screen{height:auto;min-height:100%}.topbar{align-items:flex-start;padding:18px}.controls{flex-wrap:wrap}.control-label{display:none}.content{grid-template-columns:1fr;padding:18px}.now-card{min-height:430px}.side{grid-template-columns:1fr 1fr;grid-template-rows:1fr}.footer{padding:13px 18px}}
+    @media(max-width:650px){.topbar{display:block}.controls{justify-content:flex-start;margin-top:16px}.controls select{min-width:100%;width:100%}.content{display:block}.side{display:block}.side-card{margin-top:14px}.queue-number{font-size:104px}.now-meta{padding:0 14px}.refresh-note{display:none}.empty-guide{grid-template-columns:1fr}.footer{align-items:flex-start}.privacy{max-width:65%}}
+    @media print{.controls{display:none}}
+  </style>
+</head>
+<body>
+  <main class="screen">
+    <header class="topbar">
+      <div class="brand">
+        <img src="admin/images/mhc-logo.png" alt="Pulilan Health Center logo">
+        <div>
+          <h1>Pulilan Health Center</h1>
+          <p>Live Patient Queue</p>
+        </div>
+      </div>
+      <div class="controls">
+        <span class="control-label">Display branch</span>
+        <select id="branchSelect" aria-label="Display branch"></select>
+        <button type="button" class="control-btn" id="soundButton" onclick="toggleSound()">🔇 Sound Off</button>
+        <button type="button" class="control-btn" onclick="toggleFullscreen()">⛶ Full Screen</button>
+        <span class="connection" id="connection"><i class="connection-dot"></i><span id="connectionText">Connecting</span></span>
+      </div>
+    </header>
+
+    <section class="content">
+      <article class="now-card is-empty" id="nowCard">
+        <div class="now-meta"><span class="current-branch"><i></i><span id="nowBranch">RHU I - Poblacion</span></span><span class="refresh-note">Updates automatically</span></div>
+        <div class="now-content">
+          <div class="eyebrow">Now Serving</div>
+          <div class="queue-number" id="queueNumber">—</div>
+          <div class="service" id="serviceName">Waiting for the next call</div>
+          <div class="lane" id="laneBadge">Regular Queue</div>
+          <div class="call-instruction" id="callInstruction">Queue calls will appear here automatically.</div>
+          <div class="empty-guide"><div><b>1</b><span>Watch your number</span><small>Keep your queue slip ready.</small></div><div><b>2</b><span>Listen for the call</span><small>Enable TV sound when available.</small></div><div><b>3</b><span>Proceed when called</span><small>Follow RHU staff instructions.</small></div></div>
+        </div>
+      </article>
+
+      <aside class="side">
+        <section class="side-card">
+          <h2 class="side-title">Next in Line</h2>
+          <div class="next-row" id="nextRow">
+            <div class="next-number" id="nextNumber">—</div>
+            <div class="next-details"><strong id="nextService">No patient waiting</strong><span id="nextLane">—</span></div>
+          </div>
+          <div class="stats">
+            <div class="stat"><span>Waiting</span><strong id="waitingCount">0</strong></div>
+            <div class="stat"><span>Served Today</span><strong id="servedToday">0</strong></div>
+          </div>
+        </section>
+
+        <section class="side-card waiting-card">
+          <h2 class="side-title">Next 3 Queue Numbers</h2>
+          <div class="waiting-list" id="waitingList"><div class="empty">No patients currently waiting.</div></div>
+        </section>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <div class="privacy"><strong>Please watch your queue number.</strong> Patient names and personal details are not shown on this display.</div>
+      <div class="clock"><strong id="clockTime">--:--:--</strong><span id="clockDate">—</span></div>
+    </footer>
+  </main>
+
+  <script>
+    const DEFAULT_BRANCH = 'RHU I - Poblacion';
+    const FALLBACK_BRANCHES = ['RHU I - Poblacion','RHU II - Cutcot','RHU III - Tinejero','RHU IV - Tibag'];
+    const params = new URLSearchParams(location.search);
+    let activeBranch = params.get('branch') || localStorage.getItem('phc_tv_branch') || DEFAULT_BRANCH;
+    let lastServing = '';
+    let soundEnabled = false;
+    let audioContext = null;
+    let refreshBusy = false;
+
+    const byId = id => document.getElementById(id);
+
+    function setBranches(branches) {
+      const select = byId('branchSelect');
+      const values = Array.isArray(branches) && branches.length ? branches : FALLBACK_BRANCHES;
+      if (select.options.length !== values.length) {
+        select.innerHTML = '';
+        values.forEach(branch => {
+          const option = document.createElement('option');
+          option.value = branch;
+          option.textContent = branch;
+          select.appendChild(option);
+        });
+      }
+      if (!values.includes(activeBranch)) activeBranch = values[0];
+      select.value = activeBranch;
+      byId('nowBranch').textContent = activeBranch;
+    }
+
+    function setConnection(ok, message) {
+      const connection = byId('connection');
+      connection.className = 'connection ' + (ok ? 'online' : 'offline');
+      byId('connectionText').textContent = message;
+    }
+
+    function laneLabel(lane) {
+      if (lane === 'emergency') return 'Emergency Queue';
+      if (lane === 'priority') return 'Priority Lane';
+      return 'Regular Queue';
+    }
+
+    function preferredFemaleVoice() {
+      const voices = window.speechSynthesis?.getVoices?.() || [];
+      const english = voices.filter(v => /^en(-|_)/i.test(v.lang || ''));
+      const preferred = ['Zira','Jenny','Aria','Samantha','Victoria','Karen','Moira','Susan','Hazel','Female'];
+      return english.find(v => preferred.some(name => String(v.name||'').toLowerCase().includes(name.toLowerCase()))) || english[0] || voices[0] || null;
+    }
+
+    function speakQueueCall(serving) {
+      if (!soundEnabled || !serving || !window.speechSynthesis) return;
+      const queue = String(serving.queue_number || '').replace(/-/g, ' ');
+      const service = String(serving.service || 'the assigned service area');
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(`Queue number ${queue}. Please proceed to ${service}.`);
+      utterance.lang = 'en-PH';
+      utterance.rate = 0.9;
+      utterance.pitch = 1.05;
+      const voice = preferredFemaleVoice();
+      if (voice) utterance.voice = voice;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function playCallTone() {
+      if (!soundEnabled || !audioContext) return;
+      const now = audioContext.currentTime;
+      [659,784].forEach((frequency,index) => {
+        const oscillator = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        oscillator.frequency.value = frequency;
+        gain.gain.setValueAtTime(.0001, now + index * .22);
+        gain.gain.exponentialRampToValueAtTime(.18, now + index * .22 + .02);
+        gain.gain.exponentialRampToValueAtTime(.0001, now + index * .22 + .18);
+        oscillator.connect(gain).connect(audioContext.destination);
+        oscillator.start(now + index * .22);
+        oscillator.stop(now + index * .22 + .2);
+      });
+    }
+
+    function render(feed) {
+      setBranches(feed.branches);
+      const serving = feed.now_serving;
+      const currentNumber = serving ? serving.queue_number : '';
+      const number = byId('queueNumber');
+      const lane = byId('laneBadge');
+      const nowCard = byId('nowCard');
+
+      number.textContent = currentNumber || '—';
+      number.className = 'queue-number' + (serving ? ' ' + serving.lane : '');
+      nowCard.className = 'now-card' + (serving ? ' ' + serving.lane : ' is-empty');
+      byId('serviceName').textContent = serving ? serving.service + ' — Service Area' : 'Waiting for the next call';
+      lane.textContent = serving ? laneLabel(serving.lane) : 'Regular Queue';
+      lane.className = 'lane' + (serving ? ' ' + serving.lane : '');
+      byId('callInstruction').textContent = serving ? 'Please proceed when your queue number is announced.' : 'Queue calls will appear here automatically.';
+
+      if (currentNumber && currentNumber !== lastServing) {
+        byId('nowCard').classList.remove('call-flash');
+        void byId('nowCard').offsetWidth;
+        byId('nowCard').classList.add('call-flash');
+        playCallTone();
+        speakQueueCall(serving);
+      }
+      lastServing = currentNumber;
+
+      const next = feed.next_in_line;
+      byId('nextNumber').textContent = next ? next.queue_number : '—';
+      byId('nextService').textContent = next ? next.service : 'No patient waiting';
+      byId('nextLane').textContent = next ? laneLabel(next.lane) : '—';
+      byId('waitingCount').textContent = String(feed.waiting_count || 0);
+      byId('servedToday').textContent = String(feed.served_today || 0);
+
+      const list = byId('waitingList');
+      list.innerHTML = '';
+      if (!feed.waiting || !feed.waiting.length) {
+        const empty = document.createElement('div');
+        empty.className = 'empty';
+        empty.textContent = 'No patients currently waiting.';
+        list.appendChild(empty);
+      } else {
+        feed.waiting.forEach(item => {
+          const row = document.createElement('div');
+          row.className = 'wait-item';
+          const queue = document.createElement('strong');
+          queue.textContent = item.queue_number;
+          const service = document.createElement('span');
+          service.textContent = item.service;
+          const badge = document.createElement('em');
+          badge.className = item.lane;
+          badge.textContent = laneLabel(item.lane);
+          row.append(queue, service, badge);
+          list.appendChild(row);
+        });
+      }
+    }
+
+    async function loadFeed() {
+      if (refreshBusy || document.hidden) return;
+      refreshBusy = true;
+      try {
+        const response = await fetch('backend/api.php?action=tv_queue_data&branch=' + encodeURIComponent(activeBranch), {cache:'no-store'});
+        const feed = await response.json();
+        if (!response.ok || !feed.ok) throw new Error(feed.message || 'Queue feed unavailable');
+        render(feed);
+        setConnection(true, 'Live');
+      } catch (error) {
+        setConnection(false, 'Reconnecting');
+      } finally {
+        refreshBusy = false;
+      }
+    }
+
+    byId('branchSelect').addEventListener('change', event => {
+      activeBranch = event.target.value;
+      lastServing = '';
+      localStorage.setItem('phc_tv_branch', activeBranch);
+      const url = new URL(location.href);
+      url.searchParams.set('branch', activeBranch);
+      history.replaceState({}, '', url);
+      loadFeed();
+    });
+
+    async function toggleSound() {
+      soundEnabled = !soundEnabled;
+      if (soundEnabled) {
+        lastServing = '';
+        audioContext = audioContext || new (window.AudioContext || window.webkitAudioContext)();
+        await audioContext.resume();
+        const current = byId('queueNumber').textContent.trim();
+        if (current && current !== '—') loadFeed();
+      } else if (window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+      byId('soundButton').textContent = soundEnabled ? '🔊 Sound On' : '🔇 Sound Off';
+    }
+
+    async function toggleFullscreen() {
+      if (!document.fullscreenElement) await document.documentElement.requestFullscreen?.();
+      else await document.exitFullscreen?.();
+    }
+
+    function updateClock() {
+      const now = new Date();
+      byId('clockTime').textContent = now.toLocaleTimeString('en-PH', {hour:'2-digit',minute:'2-digit',second:'2-digit'});
+      byId('clockDate').textContent = now.toLocaleDateString('en-PH', {weekday:'long',month:'long',day:'numeric',year:'numeric'});
+    }
+
+    setBranches(FALLBACK_BRANCHES);
+    updateClock();
+    loadFeed();
+    setInterval(updateClock, 1000);
+    setInterval(loadFeed, 3000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) loadFeed(); });
+  </script>
+</body>
+</html>

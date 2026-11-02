@@ -1,0 +1,1 @@
+Added Waitlist and Automatic Slot Recovery. Full slots can be joined; cancellation offers the slot to the earliest matching patient for 10 minutes. Booking page always shows a compact live waitlist/recovered-slot status so the feature remains visible during defense even when no slot is full.

@@ -1,0 +1,13 @@
+Mobile-first RHU recommendation selector
+
+Changed only:
+- patient/book.html
+- patient/js/patient_book.js
+- patient/css/patient_book.css
+
+Behavior:
+- Recommendation is now directly below the Health Center selector.
+- Only the recommended RHU is shown initially.
+- Compare other RHUs expands a compact list.
+- Desktop and mobile use the same compact layout.
+- Existing recommendation API and booking submission logic are unchanged.

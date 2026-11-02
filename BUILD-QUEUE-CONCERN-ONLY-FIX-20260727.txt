@@ -1,0 +1,19 @@
+TARGETED FIX ONLY
+
+1. Patient Queue > Your Queue keeps the original confirmed appointment card:
+   - Date
+   - Time
+   - Service
+   - Branch
+   - View Check-in QR
+   - View Appointment
+   - No live queue number before QR/manual check-in
+   - People ahead and estimated waiting time appear only after check-in
+
+2. Patient booking Concern / Notes:
+   - Saved to the appointments.concern database column
+   - Included in the appointment API payload
+   - Visible directly in the Admin/Staff Appointments list
+   - Full concern remains available in View Appointment
+
+No Reports, Heatmap, Dashboard, Messages, or other modules were changed.

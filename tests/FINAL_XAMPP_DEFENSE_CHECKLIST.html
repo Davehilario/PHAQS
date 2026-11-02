@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="../assets/js/phaqs-feedback.js?v=20260730-alert-ui-v1"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Final XAMPP Defense Checklist</title>
+<link rel="icon" href="../admin/images/mhc-logo.png">
+<style>
+body{font-family:Arial,sans-serif;background:#f4f7fb;color:#10213f;padding:30px}
+main{max-width:920px;margin:auto;background:white;border:1px solid #dbe4ef;border-radius:12px;padding:28px}
+h1{margin-top:0;color:#0b3d91}h2{font-size:17px;margin-top:25px;color:#0f274f}
+label{display:block;padding:9px 0;border-bottom:1px solid #edf2f7;font-size:13px}
+input{margin-right:9px}.note{background:#eff6ff;border-left:4px solid #0b3d91;padding:12px;font-size:12px}
+.warn{background:#fff7ed;border-left-color:#ea580c}
+@media print{body{padding:0;background:white}main{border:0}}
+</style>
+</head>
+<body><main>
+<h1>Pulilan Health Center – Final XAMPP Defense Checklist</h1>
+<p class="note">Use a normal browser for the patient and an incognito window for the administrator/staff. Start Apache and MySQL first.</p>
+
+<h2>1. Setup and Security</h2>
+<label><input type="checkbox">Import database.sql or run the required migration files.</label>
+<label><input type="checkbox">Private Brevo API key is entered only in backend/config.local.php.</label>
+<label><input type="checkbox">No live API key is included in the submission ZIP.</label>
+<label><input type="checkbox">Admin account uses pulilanhealthcenteradmin@gmail.com.</label>
+<label><input type="checkbox">Apache was restarted after configuration changes.</label>
+
+<h2>2. Authentication</h2>
+<label><input type="checkbox">System Administrator: correct password opens OTP step, not dashboard.</label>
+<label><input type="checkbox">Correct admin OTP opens the dashboard.</label>
+<label><input type="checkbox">Wrong admin OTP is rejected.</label>
+<label><input type="checkbox">RHU Staff logs in using password only and receives no OTP step.</label>
+<label><input type="checkbox">Five wrong password attempts trigger a 15-minute lock.</label>
+<label><input type="checkbox">New staff account rejects weak or blank passwords.</label>
+<label><input type="checkbox">Logout ends the session and protected pages redirect to login.</label>
+
+<h2>3. Patient Registration and Profile</h2>
+<label><input type="checkbox">Registration cannot continue without privacy consent.</label>
+<label><input type="checkbox">Duplicate patient email is rejected.</label>
+<label><input type="checkbox">Profile and ID uploads accept JPEG, PNG, or WebP only.</label>
+<label><input type="checkbox">Images over 2 MB are rejected.</label>
+<label><input type="checkbox">Accepted images are resized/compressed before profile save.</label>
+
+<h2>4. Booking and Queue</h2>
+<label><input type="checkbox">Regular appointment produces an A- queue number.</label>
+<label><input type="checkbox">Priority appointment produces a P- queue number.</label>
+<label><input type="checkbox">Booking appears on Dashboard, Appointments, Queue, and QR.</label>
+<label><input type="checkbox">A patient with an active appointment cannot create another.</label>
+<label><input type="checkbox">A full time slot rejects additional booking.</label>
+<label><input type="checkbox">Two near-simultaneous bookings do not receive the same queue number.</label>
+<label><input type="checkbox">Emergency, priority, and regular queue ordering is correct.</label>
+
+<h2>5. Notifications and Email</h2>
+<label><input type="checkbox">Confirm creates an unread patient notification and turns the bell red.</label>
+<label><input type="checkbox">Call Patient updates Queue Status, browser notification, and email.</label>
+<label><input type="checkbox">Cancel, Complete, and No Show create correct emails and notifications.</label>
+<label><input type="checkbox">Mark as Read clears the red bell only after reading.</label>
+
+<h2>6. Admin, Reports, and Disease Module</h2>
+<label><input type="checkbox">Staff cannot open admin-only pages.</label>
+<label><input type="checkbox">Dashboard charts display with internet disconnected.</label>
+<label><input type="checkbox">Bootstrap layout and Font Awesome icons display offline.</label>
+<label><input type="checkbox">Reports export CSV, Excel-compatible file, and Save as PDF.</label>
+<label><input type="checkbox">Disease-case create, view, edit, and delete work.</label>
+<label><input type="checkbox">Disease filters and heatmap values match the case table.</label>
+<label><input type="checkbox">High Case Volume Alert follows ≥5 cases and ≥50% increase.</label>
+
+<h2>7. Backup and Audit</h2>
+<label><input type="checkbox">Core Data Backup downloads valid JSON.</label>
+<label><input type="checkbox">Restore preview/confirmation is reviewed before proceeding.</label>
+<label><input type="checkbox">Restored records appear correctly after refresh.</label>
+<label><input type="checkbox">Audit Trail records login, queue, appointment, user, disease, backup, and restore actions.</label>
+
+<h2>8. Final Browser Check</h2>
+<label><input type="checkbox">Pulilan Health Center logo appears in browser tabs.</label>
+<label><input type="checkbox">No red errors appear in the browser console.</label>
+<label><input type="checkbox">No PHP warnings/errors are displayed.</label>
+<label><input type="checkbox">All footer years show 2026.</label>
+<label><input type="checkbox">Important pages remain usable on mobile width.</label>
+
+<p class="note warn"><strong>Still internet-dependent:</strong> Brevo email/OTP, real Google Sign-In, and any page still using external map/QR services. Core Bootstrap layout, Font Awesome icons, and dashboard chart rendering are packaged locally.</p>
+</main></body></html>

@@ -1,0 +1,244 @@
+
+function resolvePatientNotificationLink(item) {
+  const rawLink = String(item?.link || '').trim();
+  const title = String(item?.title || '').toLowerCase();
+  const message = String(item?.message || '').toLowerCase();
+  const type = String(item?.type || '').toLowerCase();
+  const appointmentId = Number(item?.appointment_id || 0);
+
+  if (
+    title.includes('reply') ||
+    title.includes('inquiry') ||
+    message.includes('replied to your message') ||
+    rawLink.includes('messages.html')
+  ) {
+    return rawLink.includes('messages.html') ? rawLink : 'messages.html?from=notification';
+  }
+
+  if (
+    type === 'queue' ||
+    title.includes('queue') ||
+    title.includes('being called') ||
+    rawLink.includes('queue.html')
+  ) {
+    return 'queue.html';
+  }
+
+  if (
+    title.includes('announcement') ||
+    rawLink.includes('#announcements')
+  ) {
+    return rawLink.includes('dashboard.html') ? rawLink : 'dashboard.html#announcements';
+  }
+
+  if (
+    title.includes('qr') ||
+    rawLink.includes('qr.html')
+  ) {
+    return 'qr.html';
+  }
+
+  if (
+    appointmentId > 0 ||
+    title.includes('appointment') ||
+    rawLink.includes('appointments.html')
+  ) {
+    return appointmentId > 0
+      ? `appointments.html?appointment=${appointmentId}`
+      : 'appointments.html';
+  }
+
+  if (
+    title.includes('profile') ||
+    rawLink.includes('profile.html')
+  ) {
+    return 'profile.html';
+  }
+
+  return rawLink || 'notifications.html';
+}
+
+let currentNotifications = [];
+let currentFilter = 'all';
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const patient = await loadPatientNav();
+  if (!patient) return;
+
+  document.getElementById('markAllBtn')?.addEventListener('click', markAllRead);
+  document.getElementById('refreshNotifications')?.addEventListener('click', loadNotifications);
+
+  document.querySelectorAll('.notif-tab').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.notif-tab').forEach(tab => tab.classList.remove('active'));
+      button.classList.add('active');
+      currentFilter = button.dataset.filter || 'all';
+      renderNotifications(filteredNotifications());
+    });
+  });
+
+  await loadNotifications();
+});
+
+async function loadNotifications() {
+  const list = document.getElementById('notificationsList');
+  if (list) {
+    list.innerHTML = `
+      <div class="notifications-loading">
+        <div class="loading-icon"><i class="fa-solid fa-spinner fa-spin"></i></div>
+        <p>Loading notifications...</p>
+      </div>`;
+  }
+
+  const result = await api('patient_notifications', null, 'GET');
+
+  if (!result.ok) {
+    if (list) {
+      list.innerHTML = `
+        <div class="notifications-empty">
+          <div class="loading-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <p>${esc(result.message || 'Unable to load notifications.')}</p>
+        </div>`;
+    }
+    return;
+  }
+
+  currentNotifications = Array.isArray(result.notifications) ? result.notifications : [];
+  const unread = Number(result.unread || 0);
+
+  updateNotificationBadge(unread);
+  setText('unreadText', `${unread} unread`);
+  setText('heroUnreadCount', unread);
+  setText('totalNotificationsCount', currentNotifications.length);
+  renderNotifications(filteredNotifications());
+}
+
+function filteredNotifications() {
+  if (currentFilter === 'unread') {
+    return currentNotifications.filter(item => !Number(item.is_read));
+  }
+
+  if (currentFilter === 'queue') {
+    return currentNotifications.filter(item =>
+      String(item.type || '').toLowerCase() === 'queue' ||
+      String(item.title || '').toLowerCase().includes('queue')
+    );
+  }
+
+  if (currentFilter === 'appointment') {
+    return currentNotifications.filter(item => notificationCategory(item) === 'appointment');
+  }
+
+  if (currentFilter === 'announcement') {
+    return currentNotifications.filter(item => notificationCategory(item) === 'announcement');
+  }
+
+  return currentNotifications;
+}
+
+
+function notificationCategory(item) {
+  const rawLink=String(item?.link||'').toLowerCase();
+  const title=String(item?.title||'').toLowerCase();
+  const message=String(item?.message||'').toLowerCase();
+  const type=String(item?.type||'').toLowerCase();
+  if(title.includes('announcement') || message.includes('health center announcement') || rawLink.includes('announcement') || rawLink.includes('#announcements')) return 'announcement';
+  if(type==='queue' || title.includes('queue') || title.includes('being called') || rawLink.includes('queue.html')) return 'queue';
+  if(Number(item?.appointment_id||0)>0 || title.includes('appointment') || rawLink.includes('appointments.html') || title.includes('booking')) return 'appointment';
+  return 'other';
+}
+
+function renderNotifications(items) {
+  const list = document.getElementById('notificationsList');
+  if (!list) return;
+
+  if (!items.length) {
+    list.innerHTML = `
+      <div class="notifications-empty">
+        <div class="loading-icon"><i class="fa-regular fa-bell-slash"></i></div>
+        <p>No notifications in this category.</p>
+      </div>`;
+    return;
+  }
+
+  list.innerHTML = items.map(item => `
+    <article class="notification-item ${Number(item.is_read) ? '' : 'unread'}"
+             role="link"
+             tabindex="0"
+             aria-label="${esc(item.title || 'Open notification')}"
+             onclick="openNotification(${Number(item.id)})"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openNotification(${Number(item.id)});}">
+      <div class="notification-icon ${esc(item.type || 'info')}">
+        <i class="${notificationIcon(item.type)}"></i>
+      </div>
+
+      <div class="notification-body">
+        <h3>${esc(item.title || 'Notification')}</h3>
+        <p>${esc(item.message || '')}</p>
+        <time>${formatNotificationTime(item.created_at)}</time>
+      </div>
+
+      <span class="notification-dot"></span>
+    </article>`).join('');
+}
+
+async function openNotification(id) {
+  const item = currentNotifications.find(entry => Number(entry.id) === Number(id));
+  if (!item) return;
+
+  if (!Number(item.is_read)) {
+    const result = await api('patient_notification_read', { id });
+    if (result.ok) {
+      item.is_read = 1;
+      const unread = currentNotifications.filter(entry => !Number(entry.is_read)).length;
+      updateNotificationBadge(unread);
+      setText('unreadText', `${unread} unread`);
+      setText('heroUnreadCount', unread);
+  setText('totalNotificationsCount', currentNotifications.length);
+    }
+  }
+
+  window.location.href = resolvePatientNotificationLink(item);
+}
+
+async function markAllRead() {
+  const result = await api('patient_notifications_read_all', {});
+  if (!result.ok) return;
+
+  currentNotifications.forEach(item => {
+    item.is_read = 1;
+  });
+
+  updateNotificationBadge(0);
+  setText('unreadText', '0 unread');
+  setText('heroUnreadCount', 0);
+  renderNotifications(filteredNotifications());
+}
+
+function notificationIcon(type) {
+  return ({
+    success: 'fa-solid fa-circle-check',
+    danger: 'fa-solid fa-circle-xmark',
+    warning: 'fa-solid fa-triangle-exclamation',
+    queue: 'fa-solid fa-bullhorn',
+    info: 'fa-solid fa-circle-info'
+  })[type] || 'fa-solid fa-bell';
+}
+
+function formatNotificationTime(value) {
+  const date = new Date(String(value || '').replace(' ', 'T'));
+  if (Number.isNaN(date.getTime())) return value || '';
+
+  return date.toLocaleString('en-US', {
+    month:'short',
+    day:'numeric',
+    year:'numeric',
+    hour:'numeric',
+    minute:'2-digit'
+  });
+}
+
+function setText(id, value) {
+  const element = document.getElementById(id);
+  if (element) element.textContent = value;
+}

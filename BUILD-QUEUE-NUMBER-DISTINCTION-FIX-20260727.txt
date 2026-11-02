@@ -1,0 +1,10 @@
+Targeted queue display fix
+
+- APT-xxxxx is shown only as an appointment reference before arrival.
+- Before check-in, the patient sees Upcoming Appointment and Awaiting Check-in.
+- People-ahead and estimated waiting time are hidden until a live queue entry exists.
+- After QR or manual check-in, a live queue number is generated:
+  A-001 for regular queue
+  P-001 for verified priority queue
+  E-001 for emergency walk-in
+- No other modules were changed.
